@@ -236,6 +236,13 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (max-width: 768px) {
+    .container-category-image {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .container-product {
         grid-template-columns: repeat(2, 1fr);
         padding-left: 50px;
@@ -244,7 +251,7 @@ body {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {  
     .container-product {
         grid-template-columns: repeat(1, 1fr);
         padding-left: 50px;
