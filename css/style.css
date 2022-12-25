@@ -552,7 +552,6 @@ footer {
     letter-spacing: .5px;
     text-transform: none;
     text-overflow: ellipsis;
-    overflow: hidden;
 }
 
 /* BUTTON */
