@@ -251,7 +251,7 @@ body {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {  
+@media screen and (max-width: 600px) {
     .container-product {
         grid-template-columns: repeat(1, 1fr);
         padding-left: 50px;
@@ -541,7 +541,19 @@ footer {
     height: 50px;
     background-color: #ffffff;
     border: 0.1rem solid #efefef;
-    transition: .2s ease-in-out;
+}
+
+.individual-price-active-accesories span {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: #131313;
+    letter-spacing: .5px;
+    text-transform: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 20px;
 }
 
 /* BUTTON */
@@ -553,7 +565,6 @@ footer {
     height: 50px;
     background-color: #ffffff;
     border: 0.1rem solid #efefef;
-    transition: .2s ease-in-out;
 }
 
 .box-individual-select-size span {
