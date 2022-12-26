@@ -62,15 +62,12 @@ body {
 }
 
 
-
-
-
 .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
-    height: 36px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     padding: 0px;
     font-size: 1.25rem;
     line-height: 1;
@@ -79,12 +76,12 @@ body {
     border-radius: 0px;
     transition: none;
 }
+.navbar-toggler-icon{
+    width: 36px;
+    height: 36px;
+}
 .bg-light {
     background-color: #efefef !important;
-}
-
-.container-fluid {
-    width: auto;
 }
 
 .nav-item {
@@ -100,7 +97,6 @@ a.nav-link.active {
     letter-spacing: 0.08rem;
     text-decoration: none;
 }
-
 
 
 /* -------------------- CATEGORY IMAGE -------------------- */
