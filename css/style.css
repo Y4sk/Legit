@@ -65,6 +65,44 @@ body {
 
 
 
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 36px;
+}
+.navbar-toggler{
+    padding: 0px;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0px;
+    transition: none;
+}
+.bg-light {
+    background-color: #efefef !important;
+}
+
+.container-fluid {
+    width: auto;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a.nav-link.active {
+    font-family: 'Proxima Nova', sans-serif;
+    color: #131313;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.08rem;
+    text-decoration: none;
+}
+
+
+
 /* -------------------- CATEGORY IMAGE -------------------- */
 .container-category-image {
     margin: 0 auto;
