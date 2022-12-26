@@ -620,10 +620,13 @@ footer {
     border-top: 0.1rem solid #efefef;
 }
 
+.accordion-flush .accordion-item:last-child {
+    border-bottom: 0.1rem solid #efefef;
+}
+
 .accordion-flush .accordion-item {
     border-left: 0.1rem solid #efefef;
     border-right: 0.1rem solid #efefef;
-    border-bottom: 0.1rem solid #efefef;
     border-radius: 0px;
 }
 
