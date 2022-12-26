@@ -385,8 +385,47 @@ footer {
 
 
 /* ---------------------------------------- INDIVIDUAL PRODUCT ---------------------------------------- */
-/* PRODUCT INFO */
+/* BREADDRUMB */
+.container-breadcrumb {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 2rem;
+}
 
+.breadcrumb {
+    display: flex;
+    align-items: baseline;
+}
+
+.breadcrumb-item a {
+    color: rgb(101, 101, 101);
+    text-decoration: none;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+}
+
+.underline-breaddrumb {
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+.breadcrumb-item.active {
+    color: #131313;
+    text-decoration: none;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+}
+
+/* PRODUCT INFO */
 .container-individual-title {
     max-width: 1400px;
     display: flex;
@@ -410,7 +449,7 @@ footer {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -530,6 +569,7 @@ footer {
     gap: 20px;
 }
 
+
 /* GRID - ACTIVE */
 .box-individual-product-active {
     display: flex;
@@ -552,7 +592,101 @@ footer {
     text-overflow: ellipsis;
 }
 
+
 /* BUTTON */
+/* BUTTON - ACCORDION */
+.accordion-body {
+    padding: 0px;
+}
+
+.accordion-item {
+    background-color: #ffffff;
+    border: none;
+}
+
+.accordion-button {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: #131313;
+    letter-spacing: .5px;
+    text-transform: none;
+    transition: none;
+}
+
+.accordion-flush .accordion-item:first-child {
+    border-top: 0.1rem solid #efefef;
+}
+
+.accordion-flush .accordion-item {
+    border-left: 0.1rem solid #efefef;
+    border-right: 0.1rem solid #efefef;
+    border-bottom: 0.1rem solid #efefef;
+    border-radius: 0px;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    height: 50px;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #131313;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.container-size-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.size-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 0.1rem solid #efefef;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    cursor: pointer;
+}
+
+.size-grid-button.stock span {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: #131313;
+    letter-spacing: .5px;
+    text-transform: none;
+}
+
+.size-grid-button.no-stock span {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(101, 101, 101);
+    letter-spacing: .5px;
+    text-transform: none;
+}
+
+
+
+
+
+
 .box-individual-select-size {
     display: flex;
     flex-direction: row;
@@ -728,6 +862,10 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (max-width: 768px) {
+    .container-breadcrumb {
+        display: none;
+    }
+
     .releated-container-product {
         grid-template-columns: repeat(2, 1fr);
     }
