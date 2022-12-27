@@ -8,16 +8,7 @@ body {
     background-color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-
-/* -------------------- HEADER -------------------- */
+/* ---------------------------------------- HEADER ---------------------------------------- */
 .container-logo {
     height: 56px;
     display: flex;
@@ -34,42 +25,16 @@ body {
     height: 100%;
 }
 
-.container-nav {
-    background-color: #efefef;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-nav nav ul {
-    list-style: none;
-}
-
-.container-nav nav ul li {
-    float: left;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.container-nav nav ul li a {
-    font-family: 'Proxima Nova', sans-serif;
-    color: #131313;
-    font-weight: 400;
-    font-size: 0.875rem;
-    letter-spacing: 0.08rem;
-    text-decoration: none;
-}
-
-
 .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.container-fluid{
+
+.container-fluid {
     padding-left: 25px;
     padding-right: 25px;
 }
+
 .navbar-toggler {
     padding: 0px;
     font-size: 1.25rem;
@@ -79,9 +44,11 @@ body {
     border-radius: 0px;
     transition: none;
 }
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
 .navbar-toggler-icon {
     width: 36px;
     height: 36px;
@@ -106,7 +73,15 @@ a.nav-link.active {
 }
 
 
-/* -------------------- CATEGORY IMAGE -------------------- */
+
+
+
+
+
+
+
+
+/* ---------------------------------------- CATEGORY IMAGE ---------------------------------------- */
 .container-category-image {
     margin: 0 auto;
     max-width: 1400px;
@@ -128,7 +103,16 @@ a.nav-link.active {
     height: 100%;
 }
 
-/* -------------------- PRODUCT CATEGORY -------------------- */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- PRODUCT CATEGORY ---------------------------------------- */
 .product-category-new-arrivals {
     margin: 0 auto;
     max-width: 1400px;
@@ -141,6 +125,7 @@ a.nav-link.active {
 
 .box-tittle {
     background-color: #ffffff;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -150,6 +135,7 @@ a.nav-link.active {
     font-weight: 400;
     color: #000000;
     letter-spacing: 0px;
+    margin-bottom: 0px;
 }
 
 /* ---------- GRID ---------- */
@@ -303,7 +289,12 @@ a.nav-link.active {
 
 
 
-/* ---------- FOOTER ---------- */
+
+
+
+
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
 footer {
     margin-top: 50px;
 }
@@ -354,10 +345,6 @@ footer {
     padding: 15px;
 }
 
-
-
-
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (max-width: 1200px) {
     .container-brand {
@@ -387,6 +374,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 
 
 
@@ -597,7 +585,6 @@ footer {
     margin-bottom: 0px;
 }
 
-
 /* GRID */
 .box-grid {
     display: grid;
@@ -610,7 +597,6 @@ footer {
     grid-template-columns: 1fr;
     gap: 20px;
 }
-
 
 /* GRID - ACTIVE */
 .box-individual-product-active {
@@ -633,7 +619,6 @@ footer {
     text-transform: none;
     text-overflow: ellipsis;
 }
-
 
 /* BUTTON */
 /* BUTTON - ACCORDION */
@@ -727,11 +712,6 @@ footer {
     text-transform: none;
 }
 
-
-
-
-
-
 .box-individual-select-size {
     display: flex;
     flex-direction: row;
@@ -797,7 +777,6 @@ footer {
     overflow: hidden;
 }
 
-
 /* RELATED PRODUCT */
 .store-product-individual {
     max-width: 1400px;
@@ -852,10 +831,6 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
 }
-
-
-
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (max-width: 1200px) {
