@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../img/favicon.svg">
   <title>KAWS Holiday Changbai Mountain Vinyl Figure Brown</title>
@@ -13,7 +15,7 @@
 
 <body>
   <header>
-    <!---------- HEADER ---------->
+    <!----- HEADER ----->
     <div class="container-logo">
       <a href="../index.html">
         <div class="logo">
@@ -21,33 +23,51 @@
         </div>
       </a>
     </div>
-    <div class="container-nav">
-      <nav>
-        <ul>
-          <li>
-            <a href="./brands.html">BRANDS</a>
-          </li>
-          <li>
-            <a href="./clothing.html">CLOTHING</a>
-          </li>
-          <li>
-            <a href="./sneakers.html">SNEAKERS</a>
-          </li>
-          <li>
-            <a href="./collectibles.html">COLLECTIBLES</a>
-          </li>
-          <li>
-            <a href="./accesories.html">ACCESORIES</a>
-          </li>
-          <li>
-            <a href="./about-us.html">ABOUT US</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid justify-content-start">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./brands.html">BRANDS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./clothing.html">CLOTHING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./sneakers.html">SNEAKERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./collectibles.html">COLLECTIBLES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./accesories.html">ACCESORIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./about-us.html">ABOUT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
+    <!-----BREADCRUMB ----->
+    <section class="container-breadcrumb">
+      <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="./collectibles.html">Collectibles</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><span class="underline-breaddrumb">KAWS Holiday
+              Changbai Mountain Vinyl Figure Brown</span></li>
+        </ol>
+      </nav>
+    </section>
+
     <!----- TITTLE ----->
     <section class="container-individual-title">
       <div class="individual-product-title-1">
@@ -62,7 +82,7 @@
       <!----- IMAGE ----->
       <div class="individual-product-image">
         <img src="../img/kaws-holiday-changbai-mountain-vinyl-figure-brown-2.webp"
-        alt="Figura KAWS Holiday Changbai Mountain Vinyl Figure Brown" />
+          alt="Figura KAWS Holiday Changbai Mountain Vinyl Figure Brown" />
       </div>
 
       <!----- PRODUCT INFO ----->
@@ -116,6 +136,11 @@
 
   <!----- Font Awesome ----->
   <script src="https://kit.fontawesome.com/822c44cd78.js" crossorigin="anonymous"></script>
+
+  <!----- Bootstrap ----->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
