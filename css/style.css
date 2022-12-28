@@ -913,6 +913,9 @@ footer {
     .releated-container-product {
         grid-template-columns: repeat(3, 1fr);
     }
+    .container-related-product{
+        display: none;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
