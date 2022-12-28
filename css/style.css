@@ -80,7 +80,15 @@ a.nav-link.active {
 
 
 
-
+/* ---------------------------------------- CAROUSEL ---------------------------------------- */
+.container-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-top: 20px;
+}
 /* ---------------------------------------- CATEGORY IMAGE ---------------------------------------- */
 .container-category-image {
     margin: 0 auto;
