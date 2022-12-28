@@ -81,13 +81,20 @@ a.nav-link.active {
 
 
 /* ---------------------------------------- CAROUSEL ---------------------------------------- */
-.container-carousel{
+.container-carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     max-width: 1400px;
     margin-top: 20px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+    .container-carousel{
+        display: none;
+    }
 }
 
 
@@ -355,6 +362,16 @@ footer {
     padding-left: 50px;
     padding-right: 50px;
 }
+
+.brand {
+    transition: .2s ease-in-out;
+
+}
+
+.brand:hover {
+    transform: scale(1.25);
+}
+
 
 .brand img {
     display: flex;
@@ -780,7 +797,7 @@ footer {
 
 .box-individual-product-buy:hover {
     background-color: #202020;
-    border: 1px solid #202020;
+    border: 0.1rem solid #202020;
 }
 
 .box-individual-product-buy span {
