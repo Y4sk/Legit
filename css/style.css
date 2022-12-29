@@ -90,10 +90,32 @@ a.nav-link.active {
     margin-top: 20px;
 }
 
+.container-carousel-min {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-top: 20px;
+}
+
+.carousel {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.carousel-indicators {
+    margin-bottom: 0px;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (max-width: 992px) {
-    .container-carousel{
+    .container-carousel {
         display: none;
+    }
+
+    .container-carousel-min {
+        display: flex;
     }
 }
 
@@ -913,7 +935,8 @@ footer {
     .releated-container-product {
         grid-template-columns: repeat(3, 1fr);
     }
-    .container-related-product{
+
+    .container-related-product {
         display: none;
     }
 }
