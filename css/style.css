@@ -90,15 +90,6 @@ a.nav-link.active {
     margin-top: 20px;
 }
 
-.container-carousel-min {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1400px;
-    margin-top: 20px;
-}
-
 .carousel {
     padding-left: 50px;
     padding-right: 50px;
@@ -109,13 +100,9 @@ a.nav-link.active {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .container-carousel {
         display: none;
-    }
-
-    .container-carousel-min {
-        display: flex;
     }
 }
 
