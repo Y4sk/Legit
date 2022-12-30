@@ -502,19 +502,38 @@ footer {
 .container-individual-title {
     max-width: 1400px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin: 0 auto;
-    margin-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    display: none;
 }
 
 .individual-product-title-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.individual-product-title-1 h1 {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #131313;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.individual-product-title-1 p {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 450;
+    color: #202020;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: left;
 }
 
 .container-individual-product {
@@ -554,54 +573,6 @@ footer {
     border: 0.1rem solid #efefef;
     padding: 20px;
     width: 500px;
-}
-
-.individual-product-title-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.individual-product-title-1 h1 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #131313;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.individual-product-title-2 h2 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #131313;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.individual-product-title-1 p {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1.125rem;
-    font-weight: normal;
-    color: #202020;
-    letter-spacing: 0.5px;
-    text-transform: none;
-    text-align: center;
-}
-
-.individual-product-title-2 p {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1.125rem;
-    font-weight: normal;
-    color: #202020;
-    letter-spacing: 0.5px;
-    text-transform: none;
-    text-align: center;
 }
 
 .container-individual-product-size {
@@ -878,10 +849,6 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (max-width: 1200px) {
-    .container-individual-title {
-        display: flex;
-    }
-
     .container-individual-product {
         max-width: 892px;
         flex-direction: column;
@@ -934,6 +901,17 @@ footer {
         display: none;
     }
 
+    .container-individual-title {
+        margin-top: 2rem;
+    }
+
+    .individual-product-title-1 h1{
+        font-size: 1.25rem;
+    }
+
+    .individual-product-title-1 p{
+        font-size: 1rem;
+    }
     .releated-container-product {
         grid-template-columns: repeat(2, 1fr);
     }
