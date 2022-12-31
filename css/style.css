@@ -381,7 +381,6 @@ footer {
     transform: scale(1.25);
 }
 
-
 .brand img {
     display: flex;
     justify-content: center;
@@ -601,7 +600,7 @@ footer {
 
 }
 
-.accordion-body p {
+.accordion-body-info p {
     font-family: 'Proxima Nova', sans-serif;
     font-size: 1rem;
     line-height: 24px;
@@ -705,15 +704,6 @@ footer {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
 /* GRID - ACTIVE */
 .box-individual-product-active {
     display: flex;
@@ -737,16 +727,7 @@ footer {
 }
 
 
-
 /* BUTTON */
-/* BUTTON - ACCORDION */
-
-
-.container-size-grid {
-    display: flex;
-    flex-direction: column;
-}
-
 .size-grid {
     display: flex;
     justify-content: space-between;
@@ -810,73 +791,7 @@ footer {
     margin-right: 20px;
 }
 
-.caret-down {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    cursor: pointer;
-    color: #131313;
-}
 
-
-
-
-
-
-/* PAGINATION */
-.container-pagination {
-    display: flex;
-    max-width: 1400px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    justify-content: center;
-    align-items: center;
-}
-
-.pagination {
-    margin-bottom: 0px;
-}
-
-.page-item {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.page-link {
-    border: none;
-    box-shadow: none;
-    transition: none;
-    color: #131313;
-}
-
-.page-link:focus {
-    color: #131313;
-    background-color: transparent;
-    outline: 0;
-    box-shadow: none;
-}
-
-.page-link:hover {
-    background-color: transparent;
-    color: #131313;
-}
-
-.page-item.active .page-link {
-    background-color: #131313;
-    border-color: #131313;
-}
-
-.page-item.active .page-link {
-    transition: .2s ease-in-out;
-}
-
-.page-item.active .page-link:hover {
-    background-color: #202020;
-    border-color: #202020;
-}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (max-width: 1200px) {
@@ -965,6 +880,90 @@ footer {
 
 
 
+/* ---------------------------------------- PAGINATION ---------------------------------------- */
+.container-pagination {
+    display: flex;
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    margin-bottom: 0px;
+}
+
+.page-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page-link {
+    border: none;
+    box-shadow: none;
+    transition: none;
+    color: #131313;
+}
+
+a.page-link {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: #131313;
+    letter-spacing: .5px;
+    text-transform: none;
+}
+
+span.page-link {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: .5px;
+    text-transform: none;
+}
+
+.page-link:focus {
+    color: #131313;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.page-link:hover {
+    background-color: transparent;
+    color: #131313;
+}
+
+.page-item.active .page-link {
+    background-color: #131313;
+    border-color: #131313;
+}
+
+.page-item.active .page-link {
+    transition: .2s ease-in-out;
+}
+
+.page-item.active .page-link:hover {
+    background-color: #202020;
+    border-color: #202020;
+}
+
+
+
+
+
+
+
+
+
+
 /* ---------------------------------------- ABOUT US ---------------------------------------- */
 .category-logo-legit {
     width: 100%;
@@ -1004,4 +1003,5 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 0px;
 }
