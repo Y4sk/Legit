@@ -458,6 +458,9 @@ footer {
 
 
 /* ---------------------------------------- INDIVIDUAL PRODUCT ---------------------------------------- */
+
+
+
 /* BREADDRUMB */
 .container-breadcrumb {
     max-width: 1400px;
@@ -498,6 +501,8 @@ footer {
     letter-spacing: 0.04rem;
 }
 
+
+
 /* PRODUCT INFO */
 .container-individual-title {
     max-width: 1400px;
@@ -507,6 +512,7 @@ footer {
     margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 1rem;
 }
 
 .individual-product-title-1 {
@@ -600,6 +606,8 @@ footer {
     margin-bottom: 0px;
 }
 
+
+
 /* GRID */
 .box-grid {
     display: grid;
@@ -634,6 +642,8 @@ footer {
     text-transform: none;
     text-overflow: ellipsis;
 }
+
+
 
 /* BUTTON */
 /* BUTTON - ACCORDION */
@@ -792,6 +802,9 @@ footer {
     overflow: hidden;
 }
 
+
+
+
 /* RELATED PRODUCT */
 .store-product-individual {
     max-width: 1400px;
@@ -845,6 +858,58 @@ footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+}
+
+
+
+/* PAGINATION */
+.container-pagination{
+    display: flex;
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination{
+    margin-bottom: 0px;
+}
+.page-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page-link {
+    border: none;
+    box-shadow: none;
+    transition: none;
+    color: #131313;
+}
+
+.page-link:focus {
+    color: #131313;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.page-link:hover {
+    background-color: transparent;
+    color: #131313;
+}
+
+.page-item.active .page-link {
+    background-color: #131313;
+    border-color: #131313;
+}
+
+.page-item.active .page-link:hover {
+    background-color: #202020;
+    border-color: #202020;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -905,13 +970,14 @@ footer {
         margin-top: 2rem;
     }
 
-    .individual-product-title-1 h1{
+    .individual-product-title-1 h1 {
         font-size: 1.25rem;
     }
 
-    .individual-product-title-1 p{
+    .individual-product-title-1 p {
         font-size: 1rem;
     }
+
     .releated-container-product {
         grid-template-columns: repeat(2, 1fr);
     }
