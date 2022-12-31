@@ -461,7 +461,7 @@ footer {
 
 
 
-/* BREADDRUMB */
+/* ---------- BREADDRUMB ---------- */
 .container-breadcrumb {
     max-width: 1400px;
     margin: 0 auto;
@@ -503,7 +503,7 @@ footer {
 
 
 
-/* PRODUCT INFO */
+/* ---------- TITLE ---------- */
 .container-individual-title {
     max-width: 1400px;
     display: flex;
@@ -542,6 +542,9 @@ footer {
     text-align: left;
 }
 
+
+
+/* ---------- PRODUCT ---------- */
 .container-individual-product {
     max-width: 1400px;
     display: flex;
@@ -553,6 +556,7 @@ footer {
     padding-right: 50px;
 }
 
+/* IMAGE */
 .individual-product-image {
     width: 100%;
     display: flex;
@@ -568,6 +572,7 @@ footer {
     padding-right: 50px;
 }
 
+/* PRODUCT INFO */
 .container-individual-product-box {
     display: flex;
     flex-direction: column;
@@ -575,80 +580,36 @@ footer {
     width: 500px;
 }
 
+/* BORDER + INFO */
 .individual-product-border {
     border: 0.1rem solid #efefef;
     padding: 20px;
     width: 500px;
 }
 
-.container-individual-product-size {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-bottom: 20px;
+/* SELECT SIZE */
+.accordion-body-size {
+    padding: 0px;
+
 }
 
-.container-individual-product-size img {
-    margin-right: 5px;
-    height: 20px;
+.accordion-body-info {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 0px;
+
 }
 
-.container-individual-product-size h2 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: #131313;
-    letter-spacing: .5px;
-    text-transform: none;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    margin-left: 5px;
-    margin-bottom: 0px;
-}
-
-
-
-/* GRID */
-.box-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.box-grid-accesories {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-/* GRID - ACTIVE */
-.box-individual-product-active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    background-color: #ffffff;
-    border: 0.1rem solid #efefef;
-}
-
-.individual-price-active-accesories span {
+.accordion-body p {
     font-family: 'Proxima Nova', sans-serif;
     font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
-    color: #131313;
+    color: rgb(101, 101, 101);
     letter-spacing: .5px;
     text-transform: none;
-    text-overflow: ellipsis;
-}
-
-
-
-/* BUTTON */
-/* BUTTON - ACCORDION */
-.accordion-body {
-    padding: 0px;
+    margin-bottom: 0px;
 }
 
 .accordion-item {
@@ -665,6 +626,14 @@ footer {
     letter-spacing: .5px;
     text-transform: none;
     transition: none;
+}
+
+.accordion-info {
+    padding: 1rem 0rem;
+}
+
+.accordion-svg {
+    margin-right: 10px;
 }
 
 .accordion-flush .accordion-item:first-child {
@@ -697,6 +666,81 @@ footer {
     background-color: #ffffff;
     box-shadow: none;
 }
+
+/* BUY */
+.box-individual-product-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #131313;
+    border: 0.1rem solid #131313;
+    transition: .2s ease-in-out;
+    margin-top: 20px;
+}
+
+.box-individual-product-buy:hover {
+    background-color: #202020;
+    border: 0.1rem solid #202020;
+}
+
+.box-individual-product-buy span {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* DIVIDER */
+.divider {
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* GRID - ACTIVE */
+.box-individual-product-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #ffffff;
+    border: 0.1rem solid #efefef;
+}
+
+.individual-price-active-accesories span {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: #131313;
+    letter-spacing: .5px;
+    text-transform: none;
+    text-overflow: ellipsis;
+}
+
+
+
+/* BUTTON */
+/* BUTTON - ACCORDION */
+
 
 .container-size-grid {
     display: flex;
@@ -774,96 +818,13 @@ footer {
     color: #131313;
 }
 
-.box-individual-product-buy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    background-color: #131313;
-    border: 0.1rem solid #131313;
-    transition: .2s ease-in-out;
-    margin-top: 20px;
-}
-
-.box-individual-product-buy:hover {
-    background-color: #202020;
-    border: 0.1rem solid #202020;
-}
-
-.box-individual-product-buy span {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1rem;
-    line-height: 24px;
-    font-weight: normal;
-    color: #ffffff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
 
 
-
-
-/* RELATED PRODUCT */
-.store-product-individual {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.container-related-product {
-    max-width: 1400px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.divider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2px;
-    width: 100%;
-    background-color: #efefef;
-}
-
-.related-product-text {
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.related-product-text h3 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1.625rem;
-    font-weight: 400;
-    color: #131313;
-    letter-spacing: 1px;
-}
-
-.releated-container-product {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-}
 
 
 
 /* PAGINATION */
-.container-pagination{
+.container-pagination {
     display: flex;
     max-width: 1400px;
     padding-left: 50px;
@@ -875,9 +836,10 @@ footer {
     align-items: center;
 }
 
-.pagination{
+.pagination {
     margin-bottom: 0px;
 }
+
 .page-item {
     margin-left: 5px;
     margin-right: 5px;
@@ -905,6 +867,10 @@ footer {
 .page-item.active .page-link {
     background-color: #131313;
     border-color: #131313;
+}
+
+.page-item.active .page-link {
+    transition: .2s ease-in-out;
 }
 
 .page-item.active .page-link:hover {
