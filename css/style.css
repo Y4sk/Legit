@@ -586,6 +586,135 @@ footer {
     width: 500px;
 }
 
+/* SIZE DISPLAYED */
+.individual-product-top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.size-displayed p {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #131313;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.size-displayed img {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* MODAL */
+.size-button-svg {
+    margin-right: 10px;
+}
+
+svg.size-button-svg {
+    fill: rgb(101, 101, 101);
+}
+
+.size-displayed,
+.modal-btn {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+p.modal-button-text {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(101, 101, 101);
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+p.modal-text {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #131313;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+p.modal-text-category {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.modal-border-category {
+    border: 0.1rem solid rgb(220, 220, 220);
+    background-color: #131313;
+}
+
+.modal-border-size-1 {
+    border-top: none;
+    border: 0.1rem solid rgb(220, 220, 220);
+    background-color: #ffffff;
+}
+
+.modal-border-size-2 {
+    border-top: none;
+    border: 0.1rem solid rgb(220, 220, 220);
+    background-color: #efefef;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SELECT SIZE */
 .accordion-body-size {
     padding: 0px;
