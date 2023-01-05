@@ -196,6 +196,7 @@ a.nav-link.active {
 
 .store-product-image {
     display: flex;
+    justify-content: flex-start;
 }
 
 .store-product img {
@@ -209,7 +210,7 @@ a.nav-link.active {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
