@@ -1,0 +1,19 @@
+/* ---------------------------------------- CATEGORY IMAGE ---------------------------------------- */
+.container-category-image {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    .category-image {
+        height: 100px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

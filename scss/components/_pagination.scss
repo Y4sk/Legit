@@ -1,0 +1,66 @@
+/* ---------------------------------------- PAGINATION ---------------------------------------- */
+.container-pagination {
+    display: flex;
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+
+    nav {
+        .pagination {
+            margin-bottom: 0px;
+
+            .page-item.active {
+                .page-link {
+                    border: none;
+                    box-shadow: none;
+                    transition: none;
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1rem;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: #ffffff;
+                    letter-spacing: .5px;
+                    text-transform: none;
+                    background-color: #131313;
+                    border-color: #131313;
+                    transition: .2s ease-in-out;
+                    &:hover{
+                        background-color: #202020;
+                        border-color: #202020;
+                    }
+                }
+            }
+
+            .page-item {
+                margin-left: 5px;
+                margin-right: 5px;
+                .page-link {
+                    border: none;
+                    box-shadow: none;
+                    transition: none;
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1rem;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: #131313;
+                    letter-spacing: .5px;
+                    text-transform: none;
+                    &:focus{
+                        color: #131313;
+                        background-color: transparent;
+                        outline: 0;
+                        box-shadow: none;
+                    }
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

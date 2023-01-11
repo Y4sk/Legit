@@ -1,0 +1,419 @@
+/* ---------------------------------------- INDIVIDUAL PRODUCT ---------------------------------------- */
+/* ---------- BREADDRUMB ---------- */
+.container-breadcrumb {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 2rem;
+
+    nav {
+        .breadcrumb {
+            display: flex;
+            align-items: baseline;
+
+            .breadcrumb-item {
+                a {
+                    color: rgb(101, 101, 101);
+                    text-decoration: none;
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    letter-spacing: 0.04rem;
+                }
+            }
+
+            .breadcrumb-item.active {
+                color: $color-principal;
+                text-decoration: none;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 0.875rem;
+                font-weight: 400;
+                letter-spacing: 0.04rem;
+
+                .underline-breaddrumb {
+                    display: inline-block;
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- TITLE ---------- */
+.container-individual-title {
+    max-width: 1400px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 1rem;
+
+    .individual-product-title-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $color-principal;
+            letter-spacing: 0.5px;
+            text-transform: none;
+            text-align: left;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 450;
+            color: #202020;
+            letter-spacing: 0.5px;
+            text-transform: none;
+            text-align: left;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* ---------- PRODUCT ---------- */
+.container-individual-product {
+    max-width: 1400px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .individual-product-image {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        margin-right: 75px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .container-individual-product-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 903px;
+        min-width: 400px;
+
+        .individual-product-border {
+            border: 0.1rem solid #efefef;
+            padding: 20px;
+
+            .individual-product-top-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .size-displayed {
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    padding-bottom: 20px;
+
+                    img {
+                        height: 20px;
+                        width: auto;
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        font-family: 'Proxima Nova', sans-serif;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: #131313;
+                        letter-spacing: 0.5px;
+                        text-transform: none;
+                        text-align: center;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .accordion.accordion-flush {
+                .accordion-item {
+                    border-left: 0.1rem solid #efefef;
+                    border-right: 0.1rem solid #efefef;
+                    border-radius: 0px;
+
+                    &:first-child {
+                        border-top: 0.1rem solid #efefef;
+                    }
+
+                    &:last-child {
+                        border-bottom: 0.1rem solid #efefef;
+                    }
+                }
+            }
+
+            .accordion {
+                .accordion-item {
+                    background-color: #ffffff;
+                    border: none;
+
+                    .accordion-header {
+                        .accordion-button.accordion-info {
+                            padding: 1rem 0rem;
+                        }
+
+                        .accordion-button {
+                            font-family: 'Proxima Nova', sans-serif;
+                            font-size: 1rem;
+                            height: 50px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            color: #131313;
+                            letter-spacing: .5px;
+                            text-transform: none;
+                            transition: none;
+
+                            &:focus {
+                                z-index: 3;
+                                border-color: none;
+                                outline: 0;
+                                box-shadow: none;
+                            }
+
+                            &:not(.collapsed) {
+                                color: #131313;
+                                background-color: #ffffff;
+                                box-shadow: none;
+                            }
+
+                            .accordion-svg {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+
+                    .accordion-collapse {
+                        .accordion-body-size {
+                            padding: 0px;
+                            overflow-y: scroll;
+                            max-height: 250px;
+                            z-index: 20;
+
+                            .size-grid {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 50px;
+                                width: 100%;
+                                padding: 1rem 1.25rem;
+                                border: 0.1rem solid #efefef;
+                                border-left: 0px;
+                                border-right: 0px;
+                                border-bottom: 0px;
+                                cursor: pointer;
+
+                                .modal-btn {
+                                    display: flex;
+                                    justify-content: right;
+                                    align-items: center;
+                                    padding-bottom: 0px;
+
+                                    .size-button-svg {
+                                        margin-right: 10px;
+                                        fill: $color-principal;
+                                    }
+
+                                    .modal-button-text {
+                                        font-family: 'Proxima Nova', sans-serif;
+                                        font-size: 1rem;
+                                        font-weight: 400;
+                                        color: $color-principal;
+                                        letter-spacing: 0.5px;
+                                        text-transform: none;
+                                        text-align: center;
+                                        margin-bottom: 0px;
+                                    }
+                                }
+
+                                .modal {
+                                    .modal-dialog {
+                                        max-width: 750px;
+
+                                        .modal-content {
+                                            height: 80%;
+
+                                            .modal-header {
+                                                .modal-title {
+                                                    font-family: 'Proxima Nova', sans-serif;
+                                                    font-size: 1.25rem;
+                                                    line-height: 1.5;
+                                                    font-weight: 550;
+                                                    color: $color-principal;
+                                                    letter-spacing: 0.5px;
+                                                    text-transform: none;
+                                                    text-align: center;
+                                                    margin-bottom: 0px;
+                                                    margin-bottom: 0;
+                                                }
+                                            }
+
+                                            .modal-body {
+                                                .container-fluid {
+                                                    .row {
+                                                        .modal-border-category {
+                                                            border: 0.1rem solid rgb(220, 220, 220);
+                                                            background-color: #131313;
+
+                                                            .modal-text-category {
+                                                                font-family: 'Proxima Nova', sans-serif;
+                                                                font-size: 1rem;
+                                                                font-weight: 400;
+                                                                color: #ffffff;
+                                                                letter-spacing: 0.5px;
+                                                                text-transform: none;
+                                                                text-align: center;
+                                                                padding-top: 10px;
+                                                                padding-bottom: 10px;
+                                                                margin-bottom: 0px;
+                                                            }
+                                                        }
+
+                                                        .modal-border-size-1 {
+                                                            border-top: none;
+                                                            border: 0.1rem solid rgb(220, 220, 220);
+                                                            background-color: #ffffff;
+
+                                                            .modal-text {
+                                                                font-family: 'Proxima Nova', sans-serif;
+                                                                font-size: 1rem;
+                                                                font-weight: 400;
+                                                                line-height: 24px;
+                                                                color: #131313;
+                                                                letter-spacing: 0.5px;
+                                                                text-transform: none;
+                                                                text-align: center;
+                                                                padding-top: 10px;
+                                                                padding-bottom: 10px;
+                                                                margin-bottom: 0px;
+                                                            }
+                                                        }
+
+                                                        .modal-border-size-2 {
+                                                            border-top: none;
+                                                            border: 0.1rem solid rgb(220, 220, 220);
+                                                            background-color: #efefef;
+
+                                                            .modal-text {
+                                                                font-family: 'Proxima Nova', sans-serif;
+                                                                font-size: 1rem;
+                                                                font-weight: 400;
+                                                                line-height: 24px;
+                                                                color: #131313;
+                                                                letter-spacing: 0.5px;
+                                                                text-transform: none;
+                                                                text-align: center;
+                                                                padding-top: 10px;
+                                                                padding-bottom: 10px;
+                                                                margin-bottom: 0px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .size-grid-button.stock span {
+                                    font-family: 'Proxima Nova', sans-serif;
+                                    font-size: 1rem;
+                                    line-height: 24px;
+                                    font-weight: 400;
+                                    color: #131313;
+                                    letter-spacing: .5px;
+                                    text-transform: none;
+                                }
+
+                                .size-grid-button.no-stock span {
+                                    font-family: 'Proxima Nova', sans-serif;
+                                    font-size: 1rem;
+                                    line-height: 24px;
+                                    font-weight: 400;
+                                    color: rgb(101, 101, 101);
+                                    letter-spacing: .5px;
+                                    text-transform: none;
+                                }
+                            }
+                        }
+
+                        .accordion-body-info {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            padding-left: 30px;
+                            padding-right: 0px;
+
+                            p {
+                                font-family: 'Proxima Nova', sans-serif;
+                                font-size: 1rem;
+                                line-height: 24px;
+                                font-weight: 400;
+                                color: rgb(101, 101, 101);
+                                letter-spacing: .5px;
+                                text-transform: none;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-individual-product-buy {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                background-color: #131313;
+                border: 0.1rem solid #131313;
+                transition: .2s ease-in-out;
+                margin-top: 20px;
+
+                &:hover {
+                    background-color: #202020;
+                    border: 0.1rem solid #202020;
+                }
+
+                span {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1rem;
+                    line-height: 24px;
+                    font-weight: normal;
+                    color: #ffffff;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+
+            .divider {
+                border: 1px solid #efefef;
+                background-color: #efefef;
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

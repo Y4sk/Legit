@@ -1,0 +1,41 @@
+/* ---------------------------------------- ABOUT US ---------------------------------------- */
+.category-logo-legit {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-image-background {
+        width: 100%;
+        display: flex;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.container-about-us {
+    max-width: 1400px;
+    margin: 0px auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    p {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 1.625rem;
+        color: #131313;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ---------------------------------------- HEADER ---------------------------------------- */
+header .container-logo {
+  height: 56px;
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center; }
+  header .container-logo a .logo {
+    height: 28px; }
+    header .container-logo a .logo img {
+      height: 100%; }
+
+header .navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #efefef !important; }
+  header .navbar .container-fluid {
+    padding-left: 25px;
+    padding-right: 25px; }
+    header .navbar .container-fluid .navbar-toggler {
+      padding: 0px;
+      font-size: 1.25rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 0px;
+      border-radius: 0px;
+      transition: none; }
+      header .navbar .container-fluid .navbar-toggler:focus {
+        box-shadow: none; }
+      header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+        width: 36px;
+        height: 36px; }
+    header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+      margin-left: 10px;
+      margin-right: 10px; }
+      header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link.active {
+        font-family: 'Proxima Nova', sans-serif;
+        color: #131313;
+        font-weight: 400;
+        font-size: 0.875rem;
+        letter-spacing: 0.08rem;
+        text-decoration: none; }
+
+/* ---------------------------------------- GRID ---------------------------------------- */
+.container-product {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .container-product .store-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .container-product .store-product a {
+      text-decoration: none; }
+      .container-product .store-product a .store-product-image {
+        display: flex;
+        justify-content: flex-start; }
+        .container-product .store-product a .store-product-image img {
+          width: 100%;
+          padding-right: 20px;
+          padding-left: 20px;
+          background-color: #ffffff; }
+      .container-product .store-product a .box-product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center; }
+        .container-product .store-product a .box-product .product-name {
+          margin-bottom: 2px;
+          height: 24px;
+          width: 90%; }
+          .container-product .store-product a .box-product .product-name p {
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #131313;
+            letter-spacing: 0px;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden; }
+        .container-product .store-product a .box-product .product-model {
+          margin-bottom: 8px;
+          height: 22px;
+          width: 90%; }
+          .container-product .store-product a .box-product .product-model p {
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 0.938rem;
+            font-weight: normal;
+            color: #656565;
+            letter-spacing: 0.5px;
+            text-transform: none;
+            text-decoration: none;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden; }
+        .container-product .store-product a .box-product .product-price {
+          height: 30px;
+          width: 90%; }
+          .container-product .store-product a .box-product .product-price p {
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 1.25rem;
+            font-weight: normal;
+            color: #131313;
+            letter-spacing: 0.04rem;
+            text-transform: none;
+            text-decoration: none;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden; }
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+footer {
+  margin-top: 50px; }
+  footer .footer {
+    width: 100%;
+    height: 200px;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .footer h2 {
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 1rem;
+      line-height: 24px;
+      font-weight: 300;
+      color: #ffffff;
+      letter-spacing: .5px; }
+
+/* ---------------------------------------- BRANDS ---------------------------------------- */
+.container-brand {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  gap: 50px;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .container-brand a .brand {
+    transition: .2s ease-in-out; }
+    .container-brand a .brand:hover {
+      transform: scale(1.25); }
+    .container-brand a .brand img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px; }
+
+/* ---------------------------------------- PAGINATION ---------------------------------------- */
+.container-pagination {
+  display: flex;
+  max-width: 1400px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-items: center; }
+  .container-pagination nav .pagination {
+    margin-bottom: 0px; }
+    .container-pagination nav .pagination .page-item.active .page-link {
+      border: none;
+      box-shadow: none;
+      transition: none;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 1rem;
+      line-height: 24px;
+      font-weight: 400;
+      color: #ffffff;
+      letter-spacing: .5px;
+      text-transform: none;
+      background-color: #131313;
+      border-color: #131313;
+      transition: .2s ease-in-out; }
+      .container-pagination nav .pagination .page-item.active .page-link:hover {
+        background-color: #202020;
+        border-color: #202020; }
+    .container-pagination nav .pagination .page-item {
+      margin-left: 5px;
+      margin-right: 5px; }
+      .container-pagination nav .pagination .page-item .page-link {
+        border: none;
+        box-shadow: none;
+        transition: none;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 1rem;
+        line-height: 24px;
+        font-weight: 400;
+        color: #131313;
+        letter-spacing: .5px;
+        text-transform: none; }
+        .container-pagination nav .pagination .page-item .page-link:focus {
+          color: #131313;
+          background-color: transparent;
+          outline: 0;
+          box-shadow: none; }
+        .container-pagination nav .pagination .page-item .page-link:hover {
+          background-color: transparent; }
+
+/* ---------------------------------------- CATEGORY IMAGE ---------------------------------------- */
+.container-category-image {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .container-category-image .category-image {
+    height: 100px; }
+    .container-category-image .category-image img {
+      width: 100%;
+      height: 100%; }
+
+/* ---------------------------------------- INDIVIDUAL PRODUCT ---------------------------------------- */
+/* ---------- BREADDRUMB ---------- */
+.container-breadcrumb {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 2rem; }
+  .container-breadcrumb nav .breadcrumb {
+    display: flex;
+    align-items: baseline; }
+    .container-breadcrumb nav .breadcrumb .breadcrumb-item a {
+      color: #656565;
+      text-decoration: none;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.04rem; }
+    .container-breadcrumb nav .breadcrumb .breadcrumb-item.active {
+      color: #131313;
+      text-decoration: none;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.04rem; }
+      .container-breadcrumb nav .breadcrumb .breadcrumb-item.active .underline-breaddrumb {
+        display: inline-block;
+        border-bottom: 1px solid black; }
+
+/* ---------- TITLE ---------- */
+.container-individual-title {
+  max-width: 1400px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 1rem; }
+  .container-individual-title .individual-product-title-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .container-individual-title .individual-product-title-1 h1 {
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #131313;
+      letter-spacing: 0.5px;
+      text-transform: none;
+      text-align: left;
+      margin-bottom: 0px; }
+    .container-individual-title .individual-product-title-1 p {
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 450;
+      color: #202020;
+      letter-spacing: 0.5px;
+      text-transform: none;
+      text-align: left;
+      margin-bottom: 0px; }
+
+/* ---------- PRODUCT ---------- */
+.container-individual-product {
+  max-width: 1400px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .container-individual-product .individual-product-image {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin-right: 75px; }
+    .container-individual-product .individual-product-image img {
+      width: 100%;
+      height: auto; }
+  .container-individual-product .container-individual-product-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 903px;
+    min-width: 400px; }
+    .container-individual-product .container-individual-product-box .individual-product-border {
+      border: 0.1rem solid #efefef;
+      padding: 20px; }
+      .container-individual-product .container-individual-product-box .individual-product-border .individual-product-top-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .container-individual-product .container-individual-product-box .individual-product-border .individual-product-top-info .size-displayed {
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          padding-bottom: 20px; }
+          .container-individual-product .container-individual-product-box .individual-product-border .individual-product-top-info .size-displayed img {
+            height: 20px;
+            width: auto;
+            margin-right: 10px; }
+          .container-individual-product .container-individual-product-box .individual-product-border .individual-product-top-info .size-displayed p {
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #131313;
+            letter-spacing: 0.5px;
+            text-transform: none;
+            text-align: center;
+            margin-bottom: 0px; }
+      .container-individual-product .container-individual-product-box .individual-product-border .accordion.accordion-flush .accordion-item {
+        border-left: 0.1rem solid #efefef;
+        border-right: 0.1rem solid #efefef;
+        border-radius: 0px; }
+        .container-individual-product .container-individual-product-box .individual-product-border .accordion.accordion-flush .accordion-item:first-child {
+          border-top: 0.1rem solid #efefef; }
+        .container-individual-product .container-individual-product-box .individual-product-border .accordion.accordion-flush .accordion-item:last-child {
+          border-bottom: 0.1rem solid #efefef; }
+      .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item {
+        background-color: #ffffff;
+        border: none; }
+        .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-header .accordion-button.accordion-info {
+          padding: 1rem 0rem; }
+        .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-header .accordion-button {
+          font-family: 'Proxima Nova', sans-serif;
+          font-size: 1rem;
+          height: 50px;
+          line-height: 24px;
+          font-weight: 400;
+          color: #131313;
+          letter-spacing: .5px;
+          text-transform: none;
+          transition: none; }
+          .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-header .accordion-button:focus {
+            z-index: 3;
+            border-color: none;
+            outline: 0;
+            box-shadow: none; }
+          .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+            color: #131313;
+            background-color: #ffffff;
+            box-shadow: none; }
+          .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-header .accordion-button .accordion-svg {
+            margin-right: 10px; }
+        .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size {
+          padding: 0px;
+          overflow-y: scroll;
+          max-height: 250px;
+          z-index: 20; }
+          .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            padding: 1rem 1.25rem;
+            border: 0.1rem solid #efefef;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            cursor: pointer; }
+            .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal-btn {
+              display: flex;
+              justify-content: right;
+              align-items: center;
+              padding-bottom: 0px; }
+              .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal-btn .size-button-svg {
+                margin-right: 10px;
+                fill: #131313; }
+              .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal-btn .modal-button-text {
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                color: #131313;
+                letter-spacing: 0.5px;
+                text-transform: none;
+                text-align: center;
+                margin-bottom: 0px; }
+            .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog {
+              max-width: 750px; }
+              .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content {
+                height: 80%; }
+                .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content .modal-header .modal-title {
+                  font-family: 'Proxima Nova', sans-serif;
+                  font-size: 1.25rem;
+                  line-height: 1.5;
+                  font-weight: 550;
+                  color: #131313;
+                  letter-spacing: 0.5px;
+                  text-transform: none;
+                  text-align: center;
+                  margin-bottom: 0px;
+                  margin-bottom: 0; }
+                .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content .modal-body .container-fluid .row .modal-border-category {
+                  border: 0.1rem solid gainsboro;
+                  background-color: #131313; }
+                  .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content .modal-body .container-fluid .row .modal-border-category .modal-text-category {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    letter-spacing: 0.5px;
+                    text-transform: none;
+                    text-align: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-bottom: 0px; }
+                .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content .modal-body .container-fluid .row .modal-border-size-1 {
+                  border-top: none;
+                  border: 0.1rem solid gainsboro;
+                  background-color: #ffffff; }
+                  .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content .modal-body .container-fluid .row .modal-border-size-1 .modal-text {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #131313;
+                    letter-spacing: 0.5px;
+                    text-transform: none;
+                    text-align: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-bottom: 0px; }
+                .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content .modal-body .container-fluid .row .modal-border-size-2 {
+                  border-top: none;
+                  border: 0.1rem solid gainsboro;
+                  background-color: #efefef; }
+                  .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content .modal-body .container-fluid .row .modal-border-size-2 .modal-text {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #131313;
+                    letter-spacing: 0.5px;
+                    text-transform: none;
+                    text-align: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-bottom: 0px; }
+            .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .size-grid-button.stock span {
+              font-family: 'Proxima Nova', sans-serif;
+              font-size: 1rem;
+              line-height: 24px;
+              font-weight: 400;
+              color: #131313;
+              letter-spacing: .5px;
+              text-transform: none; }
+            .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .size-grid-button.no-stock span {
+              font-family: 'Proxima Nova', sans-serif;
+              font-size: 1rem;
+              line-height: 24px;
+              font-weight: 400;
+              color: #656565;
+              letter-spacing: .5px;
+              text-transform: none; }
+        .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-info {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 30px;
+          padding-right: 0px; }
+          .container-individual-product .container-individual-product-box .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-info p {
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 1rem;
+            line-height: 24px;
+            font-weight: 400;
+            color: #656565;
+            letter-spacing: .5px;
+            text-transform: none;
+            margin-bottom: 0px; }
+      .container-individual-product .container-individual-product-box .individual-product-border .box-individual-product-buy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: #131313;
+        border: 0.1rem solid #131313;
+        transition: .2s ease-in-out;
+        margin-top: 20px; }
+        .container-individual-product .container-individual-product-box .individual-product-border .box-individual-product-buy:hover {
+          background-color: #202020;
+          border: 0.1rem solid #202020; }
+        .container-individual-product .container-individual-product-box .individual-product-border .box-individual-product-buy span {
+          font-family: 'Proxima Nova', sans-serif;
+          font-size: 1rem;
+          line-height: 24px;
+          font-weight: normal;
+          color: #ffffff;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+      .container-individual-product .container-individual-product-box .individual-product-border .divider {
+        border: 1px solid #efefef;
+        background-color: #efefef;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+
+.swiper {
+  width: 600px;
+  height: 300px; }
+
+/* ---------------------------------------- ABOUT US ---------------------------------------- */
+.category-logo-legit {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .category-logo-legit .container-image-background {
+    width: 100%;
+    display: flex; }
+    .category-logo-legit .container-image-background img {
+      width: 100%; }
+
+.container-about-us {
+  max-width: 1400px;
+  margin: 0px auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .container-about-us p {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.625rem;
+    color: #131313;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0px; }

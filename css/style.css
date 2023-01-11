@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #ffffff;
-}
-
 /* ---------------------------------------- HEADER ---------------------------------------- */
 .container-logo {
     height: 56px;
@@ -28,6 +24,10 @@ body {
 .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.bg-light {
+    background-color: #efefef !important;
 }
 
 .container-fluid {
@@ -52,10 +52,6 @@ body {
 .navbar-toggler-icon {
     width: 36px;
     height: 36px;
-}
-
-.bg-light {
-    background-color: #efefef !important;
 }
 
 .nav-item {
@@ -199,7 +195,7 @@ a.nav-link.active {
     justify-content: flex-start;
 }
 
-.store-product img {
+.store-product-image img {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
@@ -239,7 +235,6 @@ a.nav-link.active {
     margin-bottom: 8px;
     height: 22px;
     width: 90%;
-
 }
 
 .product-model p {
@@ -260,7 +255,6 @@ a.nav-link.active {
 .product-price {
     height: 30px;
     width: 90%;
-
 }
 
 .product-price p {
@@ -375,7 +369,6 @@ footer {
 
 .brand {
     transition: .2s ease-in-out;
-
 }
 
 .brand:hover {
@@ -487,11 +480,6 @@ footer {
     letter-spacing: 0.04rem;
 }
 
-.underline-breaddrumb {
-    display: inline-block;
-    border-bottom: 1px solid black;
-}
-
 .breadcrumb-item.active {
     color: #131313;
     text-decoration: none;
@@ -499,6 +487,11 @@ footer {
     font-size: 0.875rem;
     font-weight: 400;
     letter-spacing: 0.04rem;
+}
+
+.underline-breaddrumb {
+    display: inline-block;
+    border-bottom: 1px solid black;
 }
 
 
@@ -588,16 +581,23 @@ footer {
 }
 
 /* SIZE DISPLAYED */
-.size-displayed{
+.individual-product-top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.size-displayed {
     display: flex;
     justify-content: right;
     align-items: center;
     padding-bottom: 20px;
 }
-.individual-product-top-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.size-displayed img {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
 }
 
 .size-displayed p {
@@ -611,26 +611,22 @@ footer {
     margin-bottom: 0px;
 }
 
-.size-displayed img {
-    height: 20px;
-    width: auto;
-    margin-right: 10px;
-}
+
 
 /* MODAL */
+.modal-btn {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
 .size-button-svg {
     margin-right: 10px;
 }
 
 svg.size-button-svg {
     fill: rgb(101, 101, 101);
-}
-
-.modal-btn {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-bottom: 0px;
 }
 
 p.modal-button-text {
@@ -734,7 +730,6 @@ p.modal-text-category {
     padding-bottom: 0px;
     padding-left: 30px;
     padding-right: 0px;
-
 }
 
 .accordion-body-info p {
@@ -756,6 +751,7 @@ p.modal-text-category {
 .accordion-button {
     font-family: 'Proxima Nova', sans-serif;
     font-size: 1rem;
+    height: 50px;
     line-height: 24px;
     font-weight: 400;
     color: #131313;
@@ -784,10 +780,6 @@ p.modal-text-category {
     border-left: 0.1rem solid #efefef;
     border-right: 0.1rem solid #efefef;
     border-radius: 0px;
-}
-
-.accordion-flush .accordion-item .accordion-button {
-    height: 50px;
 }
 
 .accordion-button:focus {
@@ -897,35 +889,6 @@ p.modal-text-category {
     color: rgb(101, 101, 101);
     letter-spacing: .5px;
     text-transform: none;
-}
-
-.box-individual-select-size {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    background-color: #ffffff;
-    border: 0.1rem solid #efefef;
-}
-
-.box-individual-select-size span {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1rem;
-    line-height: 24px;
-    font-weight: 400;
-    color: #131313;
-    letter-spacing: .5px;
-    text-transform: none;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    margin-left: 20px;
-}
-
-.box-individual-select-size button {
-    border: none;
-    background: none;
-    margin-right: 20px;
 }
 
 
@@ -1081,9 +1044,6 @@ span.page-link {
 .page-item.active .page-link {
     background-color: #131313;
     border-color: #131313;
-}
-
-.page-item.active .page-link {
     transition: .2s ease-in-out;
 }
 
