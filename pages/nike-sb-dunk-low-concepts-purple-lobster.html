@@ -15,7 +15,6 @@
 
 <body>
   <header>
-    <!----- HEADER ----->
     <div class="container-logo">
       <a href="../index.html">
         <div class="logo">
@@ -56,45 +55,73 @@
   </header>
 
   <main>
-    <!-----BREADCRUMB ----->
-    <section class="container-breadcrumb">
-      <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="./sneakers.html">Sneakers</a></li>
-          <li class="breadcrumb-item active" aria-current="page"><span class="underline-breaddrumb">Nike SB Dunk Low
-              Concepts Purple Lobster</span></li>
-        </ol>
-      </nav>
-    </section>
-
-
-    <!----- TITTLE ----->
-    <section class="container-individual-title">
-      <div class="individual-product-title-1">
-        <h1>Nike SB Dunk Low</h1>
-        <p>Concepts Purple Lobster</p>
-      </div>
-    </section>
-
     <!-------------------- PRODUCT -------------------->
     <section class="container-individual-product">
 
-      <!----- IMAGE ----->
-      <div class="individual-product-image">
-        <img src="../img/nike-sb-dunk-low-concepts-purple-lobster-2.webp"
-          alt="Zapatilla Nike SB Dunk Low Concepts Purple Lobster" />
+      <div class="container-main-section">
+        <!-----BREADCRUMB ----->
+        <div class="container-breadcrumb">
+          <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="./sneakers.html">Sneakers</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><span class="underline-breaddrumb">Nike SB Dunk Low
+                  Concepts Purple Lobster</span></li>
+            </ol>
+          </nav>
+        </div>
+
+        <!----- BRAND ----->
+        <div class="container-individual-brand">
+          <div class="individual-brand">
+            <h3>NIKE</h3>
+          </div>
+        </div>
+        
+        <!----- PRINCIPAL TITLE ----->
+        <div class="container-individual-principal-title">
+          <div class="individual-principal-title">
+            <h1>Nike SB Dunk Low</h1>
+            <p>$1.000 - "Concepts Purple Lobster"</p>
+          </div>
+        </div>
+
+        <!----- IMAGE ----->
+        <div class="individual-product-image">
+          <img src="../img/nike-sb-dunk-low-concepts-purple-lobster-2.webp"
+            alt="Nike SB Dunk Low Concepts Purple Lobster" />
+        </div>
       </div>
 
-      <!----- PRODUCT INFO ----->
-      <div class="container-individual-product-box">
+      <div class="container-side-section">
+        <!----- BRAND ----->
+        <div class="container-individual-brand">
+          <div class="individual-brand">
+            <h3>NIKE</h3>
+          </div>
+        </div>
+        
+        <!----- SECONDARY TITLE ----->
+        <div class="container-individual-secondary-title">
+          <div class="individual-secondary-title">
+            <h2>Nike SB Dunk Low</h2>
+            <p>$1.000 - "Concepts Purple Lobster"</p>
+          </div>
+        </div>
 
         <!----- BORDER + INFO ----->
         <div class="individual-product-border">
+          <!----- SIZE DISPLAYED ----->
+          <div class="individual-product-top-info">
+            <div class="size-displayed">
+              <img src="../img/usa-flag.svg" alt="Icono de la Bandera de Estados Unidos">
+              <p>Talles mostrados en US</p>
+            </div>
+          </div>
 
           <!----- SELECT SIZE ----->
           <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
+            <div class="accordion-item ">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -104,7 +131,279 @@
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body-size">
-                  <!----- GRID 1 ----->
+                  <!----- MODAL ----->
+                  <div class="size-grid">
+                    <div type="button" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="size-button-svg"
+                        viewBox="0 0 512 512">
+                        <path
+                          d="M177.9 494.1c-18.7 18.7-49.1 18.7-67.9 0L17.9 401.9c-18.7-18.7-18.7-49.1 0-67.9l50.7-50.7 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 50.7-50.7c18.7-18.7 49.1-18.7 67.9 0l92.1 92.1c18.7 18.7 18.7 49.1 0 67.9L177.9 494.1z" />
+                      </svg>
+                      <p class="modal-button-text">Guía de Talles</p>
+                    </div>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Guia de Talles</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-sm modal-border-category">
+                                  <p class="modal-text-category">Talle US</p>
+                                </div>
+                                <div class="col-sm modal-border-category">
+                                  <p class="modal-text-category">Talle ARG</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">4</p>
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">35.5</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">4.5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">36</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">36.5</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">5.5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">37</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">6</p>
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">37.5</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">6.5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">38</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">7</p>
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">39</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">7.5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">39.5</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">8</p>
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">40</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">8.5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">41</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">9</p>
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">41.5</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">9.5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">42</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">10</p>
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">43</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">10.5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">43.5</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">11
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">44</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">11.5</p>
+                                </div>
+                                <div class="col-sm modal-border-size-2">
+                                  <p class="modal-text">44.5</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">12</p>
+                                </div>
+                                <div class="col-sm modal-border-size-1">
+                                  <p class="modal-text">45</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 4 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>4</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 4.5 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>4.5</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 5 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>5</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 5.5 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>5.5</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 6 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>6</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 6.5 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>6.5</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 7 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>7</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 7.5 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>7.5</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 8 ----->
+                  <div class="size-grid">
+                    <div role="button" class="size-grid-button no-stock">
+                      <span>8</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 8.5 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>8.5</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 9 ----->
                   <div class="size-grid">
                     <div class="size-grid-button no-stock">
                       <span>9</span>
@@ -114,20 +413,60 @@
                     </div>
                   </div>
 
-                  <!----- GRID 2 ----->
+                  <!----- SIZE 9.5 ----->
                   <div class="size-grid">
                     <div class="size-grid-button stock">
                       <span>9.5</span>
                     </div>
                     <div class="size-grid-button stock">
-                      <span>$1000</span>
+                      <span>$1.000</span>
                     </div>
                   </div>
 
-                  <!----- GRID 3 ----->
+                  <!----- SIZE 10 ----->
                   <div class="size-grid">
                     <div class="size-grid-button no-stock">
                       <span>10</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 10.5 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>10.5</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 11 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>11</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 11.5 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>11.5</span>
+                    </div>
+                    <div class="size-grid-button no-stock">
+                      <span>SIN STOCK</span>
+                    </div>
+                  </div>
+
+                  <!----- SIZE 12 ----->
+                  <div class="size-grid">
+                    <div class="size-grid-button no-stock">
+                      <span>12</span>
                     </div>
                     <div class="size-grid-button no-stock">
                       <span>SIN STOCK</span>
@@ -153,7 +492,7 @@
                 <button class="accordion-button collapsed accordion-info" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#131313"
-                    class="bi bi-check2 accordion-svg" viewBox="0 0 16 16">
+                    class="bi bi-check2 accordion-svg" viewBox="0 0 20 20">
                     <path
                       d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
                   </svg>
@@ -163,7 +502,8 @@
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body-info">
-                  <p>Todos nuestros productos son 100% originales, adquiridos de tiendas como StockX, Stadium Goods,
+                  <p>Todos nuestros productos son 100% originales, adquiridos de tiendas como StockX, Stadium
+                    Goods,
                     GOAT, entre muchas mas.</p>
                 </div>
               </div>
@@ -173,7 +513,7 @@
                 <button class="accordion-button collapsed accordion-info" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#131313"
-                    class="bi bi-truck accordion-svg" viewBox="0 0 16 16">
+                    class="bi bi-truck accordion-svg" viewBox="0 0 20 20">
                     <path
                       d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
                   </svg>
@@ -183,7 +523,29 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body-info">
-                  <p>Realizamos envios a todo el pais mediante Andreani y Ocasa.</p>
+                  <p>Una vez realizada la compra, el producto sera enviado dentro de las 48h habiles. Realizamos envios
+                    a todo el pais mediante Andreani y Ocasa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed accordion-info" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#131313"
+                    class="bi bi-box-seam accordion-svg" viewBox="0 0 20 20">
+                    <path
+                      d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                  </svg>
+                  Información del producto
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body-info">
+                  <p>Estilo: <span>BV1310-555</span></p>
+                  <p>Año de Lanzamiento: <span>2018</span></p>
+                  <p>Combinación de Colores: <span>VOLTAGE PURPLE/VOLTAGE PURPLE</span></p>
                 </div>
               </div>
             </div>
