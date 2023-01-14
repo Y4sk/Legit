@@ -1,118 +1,189 @@
 /* ---------------------------------------- INDIVIDUAL PRODUCT ---------------------------------------- */
-/* ---------- BREADDRUMB ---------- */
-.container-breadcrumb {
-    max-width: 1400px;
-    margin: 0 auto;
+.container-individual-product {
+    width: 100%;
     display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    align-items: flex-start;
+    margin: 0 auto;
     margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
-    nav {
-        .breadcrumb {
-            display: flex;
-            align-items: baseline;
+    .container-main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-            .breadcrumb-item {
-                a {
-                    color: rgb(101, 101, 101);
+        .container-individual-brand {
+            display: none;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .individual-brand {
+
+                h3 {
+                    color: $color-principal;
                     text-decoration: none;
                     font-family: 'Proxima Nova', sans-serif;
                     font-size: 0.875rem;
                     font-weight: 400;
                     letter-spacing: 0.04rem;
-                }
-            }
-
-            .breadcrumb-item.active {
-                color: $color-principal;
-                text-decoration: none;
-                font-family: 'Proxima Nova', sans-serif;
-                font-size: 0.875rem;
-                font-weight: 400;
-                letter-spacing: 0.04rem;
-
-                .underline-breaddrumb {
-                    display: inline-block;
-                    border-bottom: 1px solid black;
+                    line-height: 25px;
+                    margin-bottom: 0px;
                 }
             }
         }
-    }
-}
 
-/* ---------- TITLE ---------- */
-.container-individual-title {
-    max-width: 1400px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 1rem;
+        .container-breadcrumb {
+            display: flex;
+            justify-content: left;
+            align-items: center;
 
-    .individual-product-title-1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+            nav {
+                .breadcrumb {
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 0px;
 
-        h1 {
-            font-family: 'Proxima Nova', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: $color-principal;
-            letter-spacing: 0.5px;
-            text-transform: none;
-            text-align: left;
-            margin-bottom: 0px;
+                    .breadcrumb-item {
+                        a {
+                            color: rgb(101, 101, 101);
+                            text-decoration: none;
+                            font-family: 'Proxima Nova', sans-serif;
+                            font-size: 0.875rem;
+                            font-weight: 400;
+                            letter-spacing: 0.04rem;
+                        }
+                    }
+
+                    .breadcrumb-item.active {
+                        color: $color-principal;
+                        text-decoration: none;
+                        font-family: 'Proxima Nova', sans-serif;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        letter-spacing: 0.04rem;
+
+                        .underline-breaddrumb {
+                            display: inline-block;
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
         }
 
-        p {
-            font-family: 'Proxima Nova', sans-serif;
-            font-size: 1.125rem;
-            font-weight: 450;
-            color: #202020;
-            letter-spacing: 0.5px;
-            text-transform: none;
-            text-align: left;
+        .container-individual-principal-title {
+            display: none;
+            justify-content: left;
+            align-items: center;
             margin-bottom: 0px;
+
+            .individual-principal-title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h1 {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 650;
+                    color: $color-principal;
+                    letter-spacing: 0.5px;
+                    text-transform: none;
+                    text-align: left;
+                    margin-bottom: 0px;
+                }
+
+                p {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1.125rem;
+                    font-weight: 450;
+                    color: #202020;
+                    letter-spacing: 0.5px;
+                    text-transform: none;
+                    text-align: left;
+                    margin-bottom: 0px;
+                }
+            }
         }
-    }
-}
 
-/* ---------- PRODUCT ---------- */
-.container-individual-product {
-    max-width: 1400px;
-    display: flex;
-    align-items: flex-start;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    .individual-product-image {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: left;
-        margin-right: 75px;
-
-        img {
+        .individual-product-image {
+            padding-top: 25px;
+            padding-left: 50px;
+            padding-right: 100px;
             width: 100%;
-            height: auto;
+            min-width: 800px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 
-    .container-individual-product-box {
+    .container-side-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 903px;
-        min-width: 400px;
+        width: 100%;
+        max-width: 600px;
+
+        .container-individual-brand {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .individual-brand {
+
+                h3 {
+                    color: $color-principal;
+                    text-decoration: none;
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    letter-spacing: 0.04rem;
+                    line-height: 25px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .container-individual-secondary-title {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .individual-secondary-title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h2 {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 650;
+                    color: $color-principal;
+                    letter-spacing: 0.5px;
+                    text-transform: none;
+                    text-align: left;
+                    margin-bottom: 0px;
+                }
+
+                p {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1.125rem;
+                    font-weight: 450;
+                    color: #202020;
+                    letter-spacing: 0.5px;
+                    text-transform: none;
+                    text-align: left;
+                    margin-bottom: 0px;
+                }
+            }
+        }
 
         .individual-product-border {
             border: 0.1rem solid #efefef;
@@ -373,6 +444,17 @@
                                 letter-spacing: .5px;
                                 text-transform: none;
                                 margin-bottom: 0px;
+
+                                span {
+                                    font-family: 'Proxima Nova', sans-serif;
+                                    font-size: 1rem;
+                                    line-height: 24px;
+                                    font-weight: 400;
+                                    color: $color-principal;
+                                    letter-spacing: .5px;
+                                    text-transform: none;
+                                    margin-bottom: 0px;
+                                }
                             }
                         }
                     }
