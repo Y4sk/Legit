@@ -1,6 +1,6 @@
 /* ---------------------------------------- BRANDS ---------------------------------------- */
 .container-brand {
-    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -8,17 +8,20 @@
     gap: 50px;
     padding-left: 50px;
     padding-right: 50px;
+
     a {
         .brand {
             transition: .2s ease-in-out;
+
             &:hover {
                 transform: scale(1.25);
             }
+
             img {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 15px;
+                padding: 20px;
             }
         }
     }

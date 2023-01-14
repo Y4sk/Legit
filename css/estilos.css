@@ -48,11 +48,11 @@ header .navbar {
 
 /* ---------------------------------------- GRID ---------------------------------------- */
 .container-product {
-  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 50px;
   padding-left: 50px;
   padding-right: 50px; }
   .container-product .store-product {
@@ -147,7 +147,7 @@ footer {
 
 /* ---------------------------------------- BRANDS ---------------------------------------- */
 .container-brand {
-  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -163,7 +163,7 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 15px; }
+      padding: 20px; }
 
 /* ---------------------------------------- PAGINATION ---------------------------------------- */
 .container-pagination {
