@@ -598,6 +598,20 @@ footer {
               letter-spacing: .5px;
               text-transform: none;
               margin-bottom: 0px; }
+      .container-individual-product .container-side-section .individual-product-border .box-individual-product-price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: #ffffff;
+        border: 0.1rem solid #efefef; }
+        .container-individual-product .container-side-section .individual-product-border .box-individual-product-price span {
+          font-family: 'Proxima Nova', sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #131313;
+          letter-spacing: .5px;
+          text-transform: none; }
       .container-individual-product .container-side-section .individual-product-border .box-individual-product-buy {
         display: flex;
         align-items: center;

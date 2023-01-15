@@ -79,7 +79,7 @@
             align-items: center;
             margin-bottom: 0px;
 
-            .individual-principal-title{
+            .individual-principal-title {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -458,6 +458,24 @@
                             }
                         }
                     }
+                }
+            }
+
+            .box-individual-product-price {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                background-color: #ffffff;
+                border: 0.1rem solid #efefef;
+
+                span {
+                    font-family: 'Proxima Nova', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #131313;
+                    letter-spacing: .5px;
+                    text-transform: none;
                 }
             }
 
