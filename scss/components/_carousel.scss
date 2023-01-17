@@ -1,17 +1,12 @@
 /* ---------------------------------------- CAROUSEL ---------------------------------------- */
 .container-carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1400px;
+    width: map-get($principal-container, width-container);
+    margin: map-get($principal-container, margin-container);
+    padding: map-get($principal-container, padding-container);
+    @include flex (flex, center, center, row);
     margin-bottom: 20px;
 
     .carousel {
-        padding-left: 50px;
-        padding-right: 50px;
-
         .carousel-indicators {
             margin-bottom: 0px;
         }

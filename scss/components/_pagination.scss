@@ -1,14 +1,11 @@
 /* ---------------------------------------- PAGINATION ---------------------------------------- */
 .container-pagination {
-    display: flex;
-    max-width: 1400px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
-    margin-top: 50px;
+    width: map-get($principal-container, width-container);
+    margin: map-get($principal-container, margin-container);
+    padding: map-get($principal-container, padding-container);
+    @include flex (flex, center, center, row);
+    margin-top: 2rem;
     margin-bottom: 0px;
-    justify-content: center;
-    align-items: center;
 
     nav {
         .pagination {
@@ -16,21 +13,20 @@
 
             .page-item.active {
                 .page-link {
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 4);
+                    font-size: nth($fontsize, 3);
+                    @include text (none, none, 400, 0.04rem, 0px, center);
+                    line-height: 1.33;
                     border: none;
                     box-shadow: none;
                     transition: none;
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 1rem;
-                    line-height: 24px;
-                    font-weight: 400;
-                    color: #ffffff;
-                    letter-spacing: .5px;
-                    text-transform: none;
-                    background-color: #131313;
+                    background-color: nth($bg-color, 1 );
                     border-color: #131313;
-                    transition: .2s ease-in-out;
-                    &:hover{
-                        background-color: #202020;
+                    @extend %transition;
+
+                    &:hover {
+                        background-color: nth($bg-color, 2 );
                         border-color: #202020;
                     }
                 }
@@ -39,24 +35,25 @@
             .page-item {
                 margin-left: 5px;
                 margin-right: 5px;
+
                 .page-link {
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 1);
+                    font-size: nth($fontsize, 3);
+                    @include text (none, none, 400, 0.04rem, 0px, center);
+                    line-height: 1.33;
                     border: none;
                     box-shadow: none;
                     transition: none;
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 1rem;
-                    line-height: 24px;
-                    font-weight: 400;
-                    color: #131313;
-                    letter-spacing: .5px;
-                    text-transform: none;
-                    &:focus{
-                        color: #131313;
+
+                    &:focus {
+                        color: nth($fontcolor, 1 );
                         background-color: transparent;
                         outline: 0;
                         box-shadow: none;
                     }
-                    &:hover{
+
+                    &:hover {
                         background-color: transparent;
                     }
                 }

@@ -1,68 +1,55 @@
 /* ---------------------------------------- INDIVIDUAL PRODUCT ---------------------------------------- */
 .container-individual-product {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    margin: 0 auto;
+    @include flex (flex, center, flex-start, row);
+    width: map-get($principal-container, width-container);
+    margin: map-get($principal-container, margin-container);
+    padding: map-get($principal-container, padding-container);
     margin-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+
 
     .container-main-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (flex, center, flex-start, column);
 
         .container-individual-brand {
-            display: none;
-            justify-content: left;
-            align-items: center;
+            @include flex (none, left, center, row);
             margin-bottom: 20px;
 
             .individual-brand {
 
                 h3 {
-                    color: $color-principal;
-                    text-decoration: none;
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 0.875rem;
-                    font-weight: 400;
-                    letter-spacing: 0.04rem;
-                    line-height: 25px;
-                    margin-bottom: 0px;
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 1);
+                    font-size: nth($fontsize, 2);
+                    @include text (none, none, 400, 0.04rem, 0px, center);
+                    line-height: 1.33;
                 }
             }
         }
 
         .container-breadcrumb {
-            display: flex;
-            justify-content: left;
-            align-items: center;
+            @include flex (flex, left, center, row);
 
             nav {
                 .breadcrumb {
-                    display: flex;
-                    align-items: baseline;
+                    @include flex (flex, center, baseline, row);
                     margin-bottom: 0px;
 
                     .breadcrumb-item {
                         a {
-                            color: rgb(101, 101, 101);
-                            text-decoration: none;
-                            font-family: 'Proxima Nova', sans-serif;
-                            font-size: 0.875rem;
-                            font-weight: 400;
-                            letter-spacing: 0.04rem;
+                            font-family: nth($fontfamily, 1);
+                            color: nth($fontcolor, 3);
+                            font-size: nth($fontsize, 2);
+                            @include text (none, none, 400, 0.04rem, 0px, center);
+                            line-height: 1.33;
                         }
                     }
 
                     .breadcrumb-item.active {
-                        color: $color-principal;
-                        text-decoration: none;
-                        font-family: 'Proxima Nova', sans-serif;
-                        font-size: 0.875rem;
-                        font-weight: 400;
-                        letter-spacing: 0.04rem;
+                        font-family: nth($fontfamily, 1);
+                        color: nth($fontcolor, 1);
+                        font-size: nth($fontsize, 2);
+                        @include text (none, none, 400, 0.04rem, 0px, center);
+                        line-height: 1.33;
 
                         .underline-breaddrumb {
                             display: inline-block;
@@ -74,147 +61,111 @@
         }
 
         .container-individual-principal-title {
-            display: none;
-            justify-content: left;
-            align-items: center;
+            @include flex (none, left, center, row);
             margin-bottom: 0px;
 
             .individual-principal-title {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flex (flex, left, flex-start, column);
 
                 h1 {
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 1.5rem;
-                    font-weight: 650;
-                    color: $color-principal;
-                    letter-spacing: 0.5px;
-                    text-transform: none;
-                    text-align: left;
-                    margin-bottom: 0px;
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 1);
+                    font-size: nth($fontsize, 7);
+                    @include text (none, none, 650, 0.04rem, 0px, left);
+                    line-height: 1.35;
                 }
 
                 p {
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 1.125rem;
-                    font-weight: 450;
-                    color: #202020;
-                    letter-spacing: 0.5px;
-                    text-transform: none;
-                    text-align: left;
-                    margin-bottom: 0px;
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 2);
+                    font-size: nth($fontsize, 4);
+                    @include text (none, none, 450, 0.04rem, 0px, left);
+                    line-height: 1.35;
                 }
             }
         }
 
         .individual-product-image {
-            padding-top: 25px;
-            padding-left: 50px;
-            padding-right: 100px;
-            width: 100%;
-            min-width: 800px;
+            @include flex (flex, center, center, row);
+            @include padding (0px, 0px, 50px, 50px);
+            margin: map-get($principal-container, margin-container);
+            width: 90%;
+            min-width: 850px;
 
             img {
-                width: 100%;
-                height: auto;
+                @include img (100%, auto);
             }
         }
     }
 
     .container-side-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (flex, center, stretch, column);
         width: 100%;
         max-width: 600px;
 
         .container-individual-brand {
-            display: flex;
-            justify-content: left;
-            align-items: center;
+            @include flex (flex, left, center, row);
             margin-bottom: 20px;
 
             .individual-brand {
 
                 h3 {
-                    color: $color-principal;
-                    text-decoration: none;
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 0.875rem;
-                    font-weight: 400;
-                    letter-spacing: 0.04rem;
-                    line-height: 25px;
-                    margin-bottom: 0px;
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 1);
+                    font-size: nth($fontsize, 2);
+                    @include text (none, none, 400, 0.04rem, 0px, center);
+                    line-height: 1.33;
                 }
             }
         }
 
         .container-individual-secondary-title {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            margin-bottom: 1rem;
+            @include flex (flex, left, center, row);
+            margin-bottom: 20px;
 
             .individual-secondary-title {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flex (flex, left, left, column);
+
 
                 h2 {
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 1.5rem;
-                    font-weight: 650;
-                    color: $color-principal;
-                    letter-spacing: 0.5px;
-                    text-transform: none;
-                    text-align: left;
-                    margin-bottom: 0px;
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 1);
+                    font-size: nth($fontsize, 7);
+                    @include text (none, none, 650, 0.04rem, 0px, left);
+                    line-height: 1.35;
                 }
 
                 p {
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 1.125rem;
-                    font-weight: 450;
-                    color: #202020;
-                    letter-spacing: 0.5px;
-                    text-transform: none;
-                    text-align: left;
-                    margin-bottom: 0px;
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 2);
+                    font-size: nth($fontsize, 4);
+                    @include text (none, none, 450, 0.04rem, 0px, left);
+                    line-height: 1.35;
                 }
             }
         }
 
         .individual-product-border {
-            border: 0.1rem solid #efefef;
+            @extend %border;
             padding: 20px;
 
             .individual-product-top-info {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include flex (flex, space-between, center, row);
 
                 .size-displayed {
-                    display: flex;
-                    justify-content: right;
-                    align-items: center;
+                    @include flex (flex, left, center, row);
                     padding-bottom: 20px;
 
                     img {
-                        height: 20px;
-                        width: auto;
+                        @include img (auto, 20px);
                         margin-right: 10px;
                     }
 
                     p {
-                        font-family: 'Proxima Nova', sans-serif;
-                        font-size: 1rem;
-                        font-weight: 400;
-                        color: #131313;
-                        letter-spacing: 0.5px;
-                        text-transform: none;
-                        text-align: center;
-                        margin-bottom: 0px;
+                        font-family: nth($fontfamily, 1);
+                        color: nth($fontcolor, 1);
+                        font-size: nth($fontsize, 3);
+                        @include text (none, none, 400, 0.04rem, 0px, left);
                     }
                 }
             }
@@ -237,7 +188,7 @@
 
             .accordion {
                 .accordion-item {
-                    background-color: #ffffff;
+                    background-color: nth($bg-color, 3);
                     border: none;
 
                     .accordion-header {
@@ -246,14 +197,11 @@
                         }
 
                         .accordion-button {
-                            font-family: 'Proxima Nova', sans-serif;
-                            font-size: 1rem;
+                            font-family: nth($fontfamily, 1);
+                            color: nth($fontcolor, 1);
+                            font-size: nth($fontsize, 3);
+                            @include text (none, none, 400, 0.04rem, 0px, left);
                             height: 50px;
-                            line-height: 24px;
-                            font-weight: 400;
-                            color: #131313;
-                            letter-spacing: .5px;
-                            text-transform: none;
                             transition: none;
 
                             &:focus {
@@ -264,8 +212,8 @@
                             }
 
                             &:not(.collapsed) {
-                                color: #131313;
-                                background-color: #ffffff;
+                                color: nth($fontcolor, 1);
+                                background-color: nth($bg-color, 3);
                                 box-shadow: none;
                             }
 
@@ -283,38 +231,30 @@
                             z-index: 20;
 
                             .size-grid {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
+                                @include flex (flex, space-between, center, row);
+                                @extend %border;
                                 height: 50px;
                                 width: 100%;
                                 padding: 1rem 1.25rem;
-                                border: 0.1rem solid #efefef;
                                 border-left: 0px;
                                 border-right: 0px;
                                 border-bottom: 0px;
                                 cursor: pointer;
 
                                 .modal-btn {
-                                    display: flex;
-                                    justify-content: right;
-                                    align-items: center;
+                                    @include flex (flex, left, center, row);
                                     padding-bottom: 0px;
 
                                     .size-button-svg {
                                         margin-right: 10px;
-                                        fill: $color-principal;
+                                        fill: nth($color, 1 );
                                     }
 
                                     .modal-button-text {
-                                        font-family: 'Proxima Nova', sans-serif;
-                                        font-size: 1rem;
-                                        font-weight: 400;
-                                        color: $color-principal;
-                                        letter-spacing: 0.5px;
-                                        text-transform: none;
-                                        text-align: center;
-                                        margin-bottom: 0px;
+                                        font-family: nth($fontfamily, 1);
+                                        color: nth($fontcolor, 1);
+                                        font-size: nth($fontsize, 3);
+                                        @include text (none, none, 400, 0.04rem, 0px, center);
                                     }
                                 }
 
@@ -327,16 +267,11 @@
 
                                             .modal-header {
                                                 .modal-title {
-                                                    font-family: 'Proxima Nova', sans-serif;
-                                                    font-size: 1.25rem;
+                                                    font-family: nth($fontfamily, 1);
+                                                    color: nth($fontcolor, 1);
+                                                    font-size: nth($fontsize, 5);
+                                                    @include text (none, none, 550, 0.04rem, 0px, center);
                                                     line-height: 1.5;
-                                                    font-weight: 550;
-                                                    color: $color-principal;
-                                                    letter-spacing: 0.5px;
-                                                    text-transform: none;
-                                                    text-align: center;
-                                                    margin-bottom: 0px;
-                                                    margin-bottom: 0;
                                                 }
                                             }
 
@@ -345,59 +280,45 @@
                                                     .row {
                                                         .modal-border-category {
                                                             border: 0.1rem solid rgb(220, 220, 220);
-                                                            background-color: #131313;
+                                                            background-color: nth($bg-color, 1);
 
                                                             .modal-text-category {
-                                                                font-family: 'Proxima Nova', sans-serif;
-                                                                font-size: 1rem;
-                                                                font-weight: 400;
-                                                                color: #ffffff;
-                                                                letter-spacing: 0.5px;
-                                                                text-transform: none;
-                                                                text-align: center;
+                                                                font-family: nth($fontfamily, 1);
+                                                                color: nth($fontcolor, 4);
+                                                                font-size: nth($fontsize, 3);
+                                                                @include text (none, none, 400, 0.04rem, 0px, center);
                                                                 padding-top: 10px;
                                                                 padding-bottom: 10px;
-                                                                margin-bottom: 0px;
                                                             }
                                                         }
 
                                                         .modal-border-size-1 {
                                                             border-top: none;
                                                             border: 0.1rem solid rgb(220, 220, 220);
-                                                            background-color: #ffffff;
+                                                            background-color: nth($bg-color, 3);
 
                                                             .modal-text {
-                                                                font-family: 'Proxima Nova', sans-serif;
-                                                                font-size: 1rem;
-                                                                font-weight: 400;
-                                                                line-height: 24px;
-                                                                color: #131313;
-                                                                letter-spacing: 0.5px;
-                                                                text-transform: none;
-                                                                text-align: center;
+                                                                font-family: nth($fontfamily, 1);
+                                                                color: nth($fontcolor, 1);
+                                                                font-size: nth($fontsize, 3);
+                                                                @include text (none, none, 400, 0.04rem, 0px, center);
                                                                 padding-top: 10px;
                                                                 padding-bottom: 10px;
-                                                                margin-bottom: 0px;
                                                             }
                                                         }
 
                                                         .modal-border-size-2 {
                                                             border-top: none;
                                                             border: 0.1rem solid rgb(220, 220, 220);
-                                                            background-color: #efefef;
+                                                            background-color: nth($bg-color, 4);
 
                                                             .modal-text {
-                                                                font-family: 'Proxima Nova', sans-serif;
-                                                                font-size: 1rem;
-                                                                font-weight: 400;
-                                                                line-height: 24px;
-                                                                color: #131313;
-                                                                letter-spacing: 0.5px;
-                                                                text-transform: none;
-                                                                text-align: center;
+                                                                font-family: nth($fontfamily, 1);
+                                                                color: nth($fontcolor, 1);
+                                                                font-size: nth($fontsize, 3);
+                                                                @include text (none, none, 400, 0.04rem, 0px, center);
                                                                 padding-top: 10px;
                                                                 padding-bottom: 10px;
-                                                                margin-bottom: 0px;
                                                             }
                                                         }
                                                     }
@@ -408,52 +329,39 @@
                                 }
 
                                 .size-grid-button.stock span {
-                                    font-family: 'Proxima Nova', sans-serif;
-                                    font-size: 1rem;
-                                    line-height: 24px;
-                                    font-weight: 400;
-                                    color: #131313;
-                                    letter-spacing: .5px;
-                                    text-transform: none;
+                                    font-family: nth($fontfamily, 1);
+                                    color: nth($fontcolor, 1);
+                                    font-size: nth($fontsize, 3);
+                                    @include text (none, none, 400, 0.04rem, 0px, center);
+                                    line-height: 1.6;
                                 }
 
                                 .size-grid-button.no-stock span {
-                                    font-family: 'Proxima Nova', sans-serif;
-                                    font-size: 1rem;
-                                    line-height: 24px;
-                                    font-weight: 400;
-                                    color: rgb(101, 101, 101);
-                                    letter-spacing: .5px;
-                                    text-transform: none;
+                                    font-family: nth($fontfamily, 1);
+                                    color: nth($fontcolor, 3);
+                                    font-size: nth($fontsize, 3);
+                                    @include text (none, none, 400, 0.04rem, 0px, center);
+                                    line-height: 1.6;
                                 }
                             }
                         }
 
                         .accordion-body-info {
-                            padding-top: 0px;
-                            padding-bottom: 0px;
-                            padding-left: 30px;
-                            padding-right: 0px;
+                            @include padding (0px, 0px, 30px, 0px);
 
                             p {
-                                font-family: 'Proxima Nova', sans-serif;
-                                font-size: 1rem;
-                                line-height: 24px;
-                                font-weight: 400;
-                                color: rgb(101, 101, 101);
-                                letter-spacing: .5px;
-                                text-transform: none;
-                                margin-bottom: 0px;
+                                font-family: nth($fontfamily, 1);
+                                color: nth($fontcolor, 3);
+                                font-size: nth($fontsize, 3);
+                                @include text (none, none, 400, 0.04rem, 0px, left);
+                                line-height: 1.5;
 
                                 span {
-                                    font-family: 'Proxima Nova', sans-serif;
-                                    font-size: 1rem;
-                                    line-height: 24px;
-                                    font-weight: 400;
-                                    color: $color-principal;
-                                    letter-spacing: .5px;
-                                    text-transform: none;
-                                    margin-bottom: 0px;
+                                    font-family: nth($fontfamily, 1);
+                                    color: nth($fontcolor, 1);
+                                    font-size: nth($fontsize, 3);
+                                    @include text (none, none, 400, 0.04rem, 0px, left);
+                                    line-height: 1.5;
                                 }
                             }
                         }
@@ -462,54 +370,43 @@
             }
 
             .box-individual-product-price {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex (flex, center, center, row);
+                @extend %border;
                 height: 50px;
-                background-color: #ffffff;
-                border: 0.1rem solid #efefef;
+                background-color: nth($bg-color , 3);
 
                 span {
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 1rem;
-                    font-weight: 400;
-                    color: #131313;
-                    letter-spacing: .5px;
-                    text-transform: none;
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 1);
+                    font-size: nth($fontsize, 3);
+                    @include text (none, none, 400, 0.04rem, 0px, left);
+                    line-height: 1.5;
                 }
             }
 
             .box-individual-product-buy {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 50px;
-                background-color: #131313;
-                border: 0.1rem solid #131313;
-                transition: .2s ease-in-out;
+                @include flex (flex, center, center, row);
+                height: map-get($button, btn-height);
+                background-color: map-get($button, btn-background);
+                transition: map-get($button, btn-transition);
                 margin-top: 20px;
 
                 &:hover {
-                    background-color: #202020;
-                    border: 0.1rem solid #202020;
+                    background-color: map-get($button, btn-background-hover);
                 }
 
                 span {
-                    font-family: 'Proxima Nova', sans-serif;
-                    font-size: 1rem;
-                    line-height: 24px;
-                    font-weight: normal;
-                    color: #ffffff;
-                    letter-spacing: 1px;
-                    text-transform: uppercase;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
+                    font-family: nth($fontfamily, 1);
+                    color: nth($fontcolor, 4);
+                    font-size: nth($fontsize, 3);
+                    @include text (none, uppercase, 400, 0.04rem, 0px, left);
+                    line-height: 1.5;
                 }
             }
 
             .divider {
                 border: 1px solid #efefef;
-                background-color: #efefef;
+                background-color: nth($bg-color, 3);
                 width: 100%;
                 margin-top: 20px;
                 margin-bottom: 20px;

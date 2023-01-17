@@ -1,19 +1,17 @@
 /* ---------------------------------------- CATEGORY IMAGE ---------------------------------------- */
 .container-category-image {
-    margin: 0 auto;
-    max-width: 1400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center, row);
+    width: map-get($principal-container, width-container);
+    margin: map-get($principal-container, margin-container);
+    padding: map-get($principal-container, padding-container);
     margin-top: 100px;
     margin-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+
     .category-image {
         height: 100px;
+
         img {
-            width: 100%;
-            height: 100%;
+            @include img (100%, 100%);
         }
     }
 }

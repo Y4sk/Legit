@@ -1,41 +1,25 @@
 /* ---------------------------------------- ABOUT US ---------------------------------------- */
 .category-logo-legit {
-    width: 100%;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center, row);
+    width: map-get($principal-container, width-container);
+    margin-bottom: 2rem;
 
-    .container-image-background {
-        width: 100%;
-        display: flex;
-
-        img {
-            width: 100%;
-        }
+    img {
+        @include img (100%, auto);
     }
 }
 
 .container-about-us {
-    max-width: 1400px;
-    margin: 0px auto;
+    @include flex (flex, center, center, row);
+    width: 75%;
+    margin: map-get($principal-container, margin-container);
+    padding: map-get($principal-container, padding-container);
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
 
     p {
-        font-family: 'Proxima Nova', sans-serif;
-        font-size: 1.625rem;
-        color: #131313;
-        font-weight: normal;
-        letter-spacing: 0.5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 0px;
+        font-family: nth($fontfamily, 1);
+        color: nth($fontcolor, 1);
+        font-size: nth($fontsize, 7);
+        @include text (none, none, 400, 0.04rem, 0px, center);
     }
 }

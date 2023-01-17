@@ -1,18 +1,17 @@
 /* ---------------------------------------- HEADER ---------------------------------------- */
 header {
     .container-logo {
+        @include flex (flex, center, center, row);
         height: 56px;
-        display: flex;
-        background-color: #ffffff;
-        align-items: center;
-        justify-content: center;
+        background-color: nth($bg-color, 3 );
+
 
         a {
             .logo {
                 height: 28px;
 
                 img {
-                    height: 100%;
+                    @include img (auto, 100%);
                 }
             }
         }
@@ -21,11 +20,10 @@ header {
     .navbar {
         padding-top: 0px;
         padding-bottom: 0px;
-        background-color: #efefef !important;
+        background-color: nth($bg-color, 4 ) !important;
 
         .container-fluid {
-            padding-left: 25px;
-            padding-right: 25px;
+            padding: map-get($principal-container, padding-container);
 
             .navbar-toggler {
                 padding: 0px;
@@ -53,12 +51,10 @@ header {
                         margin-right: 10px;
 
                         .nav-link.active {
-                            font-family: 'Proxima Nova', sans-serif;
-                            color: $color-principal;
-                            font-weight: 400;
-                            font-size: 0.875rem;
-                            letter-spacing: 0.08rem;
-                            text-decoration: none;
+                            font-family: nth($fontfamily, 1);
+                            color: nth($fontcolor, 1);
+                            font-size: nth($fontsize, 2);
+                            @include text (none, none, 400, 0.08rem, 0px, left);
                         }
                     }
                 }
