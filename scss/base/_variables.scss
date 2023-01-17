@@ -1,2 +1,135 @@
 $color-principal: #131313;
 $color-secundario: #202020;
+
+//! LISTAS
+$fontcolor:
+    #131313,
+    #202020,
+    #656565,
+    #ffffff,
+    #efefef;
+
+$fontsize: 
+    0.75rem, //? 12px - 1
+    0.875rem, //? 14px -2
+    1rem, //? 16px -3
+    1.125rem, //? 18px -4
+    1.25rem, //? 20px -5
+    1.375rem, //? 22px -6
+    1.5rem; //? 24px -7
+
+$fontfamily: 'Proxima Nova', sans-serif;
+
+$bg-color:
+    #131313,
+    #202020,
+    #ffffff,
+    #efefef;
+
+
+//! MAPAS
+$button: (
+    btn-background: #131313,
+    btn-height:50px,
+    btn-transition: .2s ease-in-out,
+    btn-background-hover: #202020,
+);
+
+$principal-container: (
+    width-container:100%,
+    height-container:100%,
+    margin-container: 0 auto,
+    margin-top-container: 2rem,
+    padding-container: 0px 2rem 0px 2rem,
+);
+
+$pagination: (
+    pag-boder: none,
+    pag-box-shadow: none,
+    pag-bg: #131313,
+    pag-border-color: #131313,
+    pag-bg-hover: #202020,
+    pag-border-color-hover: #202020,
+    pag-outline: 0,
+    pag-bg-noactive: transparent,
+    pag-transition: none,
+);
+
+$footer: (
+    footer-bg: #131313,
+);
+
+
+//! EXTENDS
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%border {
+    border: 0.1rem solid #efefef;
+}
+
+%transition {
+    transition: .2s ease-in-out;
+}
+
+
+//! MIXINS
+@mixin flex ($flex, $justify, $aling, $direction) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-direction: $direction;
+}
+
+@mixin img ($img-width, $img-height) {
+    width: $img-width;
+    height: $img-height;
+}
+
+@mixin text ($decoration, $transform, $weight, $spacing, $margin-bott, $aling) {
+    text-decoration: $decoration;
+    text-transform: $transform;
+    font-weight: $weight;
+    letter-spacing: $spacing;
+    margin-bottom: $margin-bott;
+    text-align: $aling;
+}
+
+@mixin text-overflow ($webkit-box, $webkit-box-orient, $webkit-line-clamp, $overflow) {
+    display: $webkit-box;
+    -webkit-box-orient: $webkit-box-orient;
+    -webkit-line-clamp: $webkit-line-clamp;
+    overflow: $overflow;
+}
+
+@mixin grid-columns ($display, $grid-tc, $grid-gap) {
+    display: $display;
+    grid-template-columns: $grid-tc;
+    gap: $grid-gap;
+}
+
+@mixin padding ($padd-top, $padd-bott, $padd-lft, $padd-rgt) {
+    padding-top: $padd-top;
+    padding-bottom: $padd-bott;
+    padding-left: $padd-lft;
+    padding-right: $padd-rgt;
+}
+
+@mixin margin ($mrg-top, $mrg-bott, $mrg-lft, $mrg-rgt) {
+    margin-top: $mrg-top;
+    margin-bottom: $mrg-bott;
+    margin-left: $mrg-lft;
+    margin-right: $mrg-rgt;
+}
+
+
+
+
+
+
+
+
+
