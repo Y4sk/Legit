@@ -1,6 +1,3 @@
-$color-principal: #131313;
-$color-secundario: #202020;
-
 //! LISTAS
 $fontcolor:
     #131313,
@@ -18,7 +15,8 @@ $fontsize:
     1.375rem, //? 22px -6
     1.5rem; //? 24px -7
 
-$fontfamily: 'Proxima Nova', sans-serif;
+$fontfamily: 
+    'Proxima Nova', sans-serif;
 
 $bg-color:
     #131313,
@@ -26,7 +24,11 @@ $bg-color:
     #ffffff,
     #efefef;
 
+$color:
+    #131313,
+    #202020;
 
+    
 //! MAPAS
 $button: (
     btn-background: #131313,
@@ -61,12 +63,6 @@ $footer: (
 
 
 //! EXTENDS
-%flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 %border {
     border: 0.1rem solid #efefef;
 }
@@ -124,12 +120,3 @@ $footer: (
     margin-left: $mrg-lft;
     margin-right: $mrg-rgt;
 }
-
-
-
-
-
-
-
-
-

@@ -257,16 +257,19 @@ footer {
       margin-left: 5px;
       margin-right: 5px; }
       .container-pagination nav .pagination .page-item .page-link {
+        font-family: "Proxima Nova";
+        color: #131313;
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: none;
+        font-weight: 400;
+        letter-spacing: 0.04rem;
+        margin-bottom: 0px;
+        text-align: center;
+        line-height: 1.33;
         border: none;
         box-shadow: none;
-        transition: none;
-        font-family: 'Proxima Nova', sans-serif;
-        font-size: 1rem;
-        line-height: 24px;
-        font-weight: 400;
-        color: #131313;
-        letter-spacing: .5px;
-        text-transform: none; }
+        transition: none; }
         .container-pagination nav .pagination .page-item .page-link:focus {
           color: #131313;
           background-color: transparent;
