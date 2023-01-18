@@ -7,13 +7,13 @@ $fontcolor:
     #efefef;
 
 $fontsize: 
-    0.75rem, //? 12px - 1
-    0.875rem, //? 14px -2
-    1rem, //? 16px -3
-    1.125rem, //? 18px -4
-    1.25rem, //? 20px -5
-    1.375rem, //? 22px -6
-    1.5rem; //? 24px -7
+    0.75rem,
+    0.875rem,
+    1rem,
+    1.125rem,
+    1.25rem,
+    1.375rem,
+    1.5rem;
 
 $fontfamily: 
     'Proxima Nova', sans-serif;
@@ -55,10 +55,6 @@ $pagination: (
     pag-outline: 0,
     pag-bg-noactive: transparent,
     pag-transition: none,
-);
-
-$footer: (
-    footer-bg: #131313,
 );
 
 

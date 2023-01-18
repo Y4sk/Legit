@@ -568,7 +568,8 @@ footer {
                 margin-bottom: 0px;
                 text-align: center; }
             .container-individual-product .container-side-section .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog {
-              max-width: 750px; }
+              max-width: 750px;
+              padding: 0px 2rem 0px 2rem; }
               .container-individual-product .container-side-section .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content {
                 height: 80%; }
                 .container-individual-product .container-side-section .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid .modal .modal-dialog .modal-content .modal-header .modal-title {
@@ -821,4 +822,6 @@ footer {
     padding-left: 50px;
     padding-right: 50px; }
   .container-brand {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .container-individual-product .container-side-section .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid:nth-child(1) {
+    display: none; } }

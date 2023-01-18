@@ -126,7 +126,6 @@
             .individual-secondary-title {
                 @include flex (flex, left, left, column);
 
-
                 h2 {
                     font-family: nth($fontfamily, 1);
                     color: nth($fontcolor, 1);
@@ -247,7 +246,7 @@
 
                                     .size-button-svg {
                                         margin-right: 10px;
-                                        fill: nth($color, 1 );
+                                        fill: nth($color, 1);
                                     }
 
                                     .modal-button-text {
@@ -261,6 +260,7 @@
                                 .modal {
                                     .modal-dialog {
                                         max-width: 750px;
+                                        padding: map-get($principal-container, padding-container);
 
                                         .modal-content {
                                             height: 80%;

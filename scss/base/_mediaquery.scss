@@ -24,8 +24,9 @@
 
             .container-individual-principal-title {
                 display: flex;
-                .individual-principal-title{
-                    h1{
+
+                .individual-principal-title {
+                    h1 {
                         text-transform: uppercase;
                     }
                 }
@@ -108,5 +109,25 @@
 
     .container-brand {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-individual-product {
+        .container-side-section {
+            .individual-product-border {
+                .accordion {
+                    .accordion-item {
+                        .accordion-collapse {
+                            .accordion-body-size {
+                                .size-grid {
+                                    &:nth-child(1) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
