@@ -316,7 +316,7 @@ footer {
       align-items: center;
       flex-direction: row;
       margin-bottom: 20px; }
-      .container-individual-product .container-main-section .container-individual-brand .individual-brand h3 {
+      .container-individual-product .container-main-section .container-individual-brand .individual-brand {
         font-family: "Proxima Nova";
         color: #131313;
         font-size: 0.875rem;
@@ -424,7 +424,7 @@ footer {
       align-items: center;
       flex-direction: row;
       margin-bottom: 20px; }
-      .container-individual-product .container-side-section .container-individual-brand .individual-brand h3 {
+      .container-individual-product .container-side-section .container-individual-brand .individual-brand {
         font-family: "Proxima Nova";
         color: #131313;
         font-size: 0.875rem;

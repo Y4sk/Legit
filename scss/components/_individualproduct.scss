@@ -15,14 +15,11 @@
             margin-bottom: 20px;
 
             .individual-brand {
-
-                h3 {
-                    font-family: nth($fontfamily, 1);
-                    color: nth($fontcolor, 1);
-                    font-size: nth($fontsize, 2);
-                    @include text (none, none, 400, 0.04rem, 0px, center);
-                    line-height: 1.33;
-                }
+                font-family: nth($fontfamily, 1);
+                color: nth($fontcolor, 1);
+                font-size: nth($fontsize, 2);
+                @include text (none, none, 400, 0.04rem, 0px, center);
+                line-height: 1.33;
             }
         }
 
@@ -108,14 +105,11 @@
             margin-bottom: 20px;
 
             .individual-brand {
-
-                h3 {
-                    font-family: nth($fontfamily, 1);
-                    color: nth($fontcolor, 1);
-                    font-size: nth($fontsize, 2);
-                    @include text (none, none, 400, 0.04rem, 0px, center);
-                    line-height: 1.33;
-                }
+                font-family: nth($fontfamily, 1);
+                color: nth($fontcolor, 1);
+                font-size: nth($fontsize, 2);
+                @include text (none, none, 400, 0.04rem, 0px, center);
+                line-height: 1.33;
             }
         }
 
