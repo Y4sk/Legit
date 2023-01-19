@@ -1,13 +1,11 @@
 /* ---------------------------------------- MEDIA QUERYS ---------------------------------------- */
 @media screen and (max-width: 1200px) {
     .container-product {
-        grid-template-columns: repeat(3, 1fr);
-        padding-left: 50px;
-        padding-right: 50px;
+        @include grid-columns (grid, repeat(3, 1fr), 50px);
     }
 
     .container-brand {
-        grid-template-columns: repeat(4, 1fr);
+        @include grid-columns (grid, repeat(4, 1fr), 50px);
     }
 
     .container-individual-product {
@@ -69,13 +67,11 @@
 
 @media screen and (max-width: 992px) {
     .container-product {
-        grid-template-columns: repeat(3, 1fr);
-        padding-left: 50px;
-        padding-right: 50px;
+        @include grid-columns (grid, repeat(3, 1fr), 50px);
     }
 
     .container-brand {
-        grid-template-columns: repeat(3, 1fr);
+        @include grid-columns (grid, repeat(3, 1fr), 50px);
     }
 }
 
@@ -90,26 +86,19 @@
     }
 
     .container-product {
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 50px;
-        padding-right: 50px;
+        @include grid-columns (grid, repeat(2, 1fr), 50px);
     }
 
     .container-brand {
-        grid-template-columns: repeat(2, 1fr);
+        @include grid-columns (grid, repeat(2, 1fr), 50px);
     }
 }
 
 @media screen and (max-width: 600px) {
     .container-product {
-        grid-template-columns: repeat(1, 1fr);
-        padding-left: 50px;
-        padding-right: 50px;
+        @include grid-columns (grid, repeat(1, 1fr), 50px);
     }
 
-    .container-brand {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .container-individual-product {
         .container-side-section {

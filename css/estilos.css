@@ -761,11 +761,13 @@ footer {
 /* ---------------------------------------- MEDIA QUERYS ---------------------------------------- */
 @media screen and (max-width: 1200px) {
   .container-product {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 50px;
-    padding-right: 50px; }
+    gap: 50px; }
   .container-brand {
-    grid-template-columns: repeat(4, 1fr); }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px; }
   .container-individual-product {
     flex-direction: column; }
     .container-individual-product .container-main-section .container-breadcrumb {
@@ -797,11 +799,13 @@ footer {
 
 @media screen and (max-width: 992px) {
   .container-product {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 50px;
-    padding-right: 50px; }
+    gap: 50px; }
   .container-brand {
-    grid-template-columns: repeat(3, 1fr); } }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; } }
 
 @media screen and (max-width: 768px) {
   .container-carousel {
@@ -810,18 +814,18 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px; }
   .container-product {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 50px;
-    padding-right: 50px; }
+    gap: 50px; }
   .container-brand {
-    grid-template-columns: repeat(2, 1fr); } }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; } }
 
 @media screen and (max-width: 600px) {
   .container-product {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding-left: 50px;
-    padding-right: 50px; }
-  .container-brand {
-    grid-template-columns: repeat(2, 1fr); }
+    gap: 50px; }
   .container-individual-product .container-side-section .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid:nth-child(1) {
     display: none; } }
