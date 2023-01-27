@@ -1,0 +1,126 @@
+.swiper {
+    width: map-get($principal-container, width-container);
+    height: 100%;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            position: relative;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            border-radius: 15px;
+            text-align: start;
+            border-radius: 0px;
+
+            a {
+                text-decoration: none;
+
+                .store-product-image {
+                    @include flex (flex, flex-start, center, row);
+
+                    img {
+                        @include img (100%, 100%);
+                    }
+                }
+
+                .box-product {
+                    @include flex (flex, flex-end, center, column);
+                    width: map-get($principal-container, width-container);
+
+                    .product-name {
+                        margin-bottom: 2px;
+                        height: 24px;
+                        width: 100%;
+
+                        p {
+                            font-family: nth($fontfamily, 1);
+                            color: nth($fontcolor, 1);
+                            font-size: nth($fontsize, 3);
+                            @include text (none, uppercase, 700, 0.04rem, 0px, center);
+                            @include text-overflow (-webkit-box, vertical, 1, hidden);
+                        }
+                    }
+
+                    .product-model {
+                        margin-bottom: 8px;
+                        height: 22px;
+                        width: 100%;
+
+                        p {
+                            font-family: nth($fontfamily, 1);
+                            color: nth($fontcolor, 3);
+                            font-size: nth($fontsize, 2);
+                            @include text (none, none, 400, 0.04rem, 0px, center);
+                            @include text-overflow (-webkit-box, vertical, 1, hidden);
+                        }
+                    }
+
+                    .product-price {
+                        height: 30px;
+                        width: 100%;
+
+                        p {
+                            font-family: nth($fontfamily, 1);
+                            color: nth($fontcolor, 1);
+                            font-size: nth($fontsize, 5);
+                            @include text (none, none, 400, 0.04rem, 0px, center);
+                            @include text-overflow (-webkit-box, vertical, 1, hidden);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        @extend %transition;
+        left: 2rem !important;
+        color: nth($fontcolor, 4);
+        --swiper-navigation-size: 15px;
+        width: 40px;
+        height: 40px;
+        margin-top: -25px;
+        background-color: nth($bg-color, 1);
+        border-radius: 50%;
+        opacity: 1;
+        z-index: 3;
+
+        &::before {
+            @extend %transition;
+            content: "";
+            height: 295.44px;
+            position: absolute;
+            width: 312px;
+            z-index: 2;
+            background: linear-gradient(90deg, #ffffff -3.81%, rgba(255, 255, 255, 0) 93.33%);
+        }
+    }
+
+    .swiper-button-next {
+        @extend %transition;
+        right: 2rem !important;
+        color: nth($fontcolor, 4);
+        --swiper-navigation-size: 15px;
+        width: 40px;
+        height: 40px;
+        margin-top: -25px;
+        background-color: nth($bg-color, 1);
+        border-radius: 50%;
+        opacity: 1;
+        z-index: 3;
+
+        &::before {
+            @extend %transition;
+            content: "";
+            height: 295.44px;
+            position: absolute;
+            width: 312px;
+            z-index: 2;
+            background: linear-gradient(270deg, #ffffff -3.81%, rgba(255, 255, 255, 0) 93.33%);
+        }
+    }
+
+    .swiper-button-disabled {
+        opacity: 0;
+    }
+}

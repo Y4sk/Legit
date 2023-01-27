@@ -74,6 +74,20 @@
     .container-brand {
         @include grid-columns (grid, repeat(3, 1fr), 50px);
     }
+
+    .swiper {
+        .swiper-button-prev {
+            &::before {
+                background: none;
+            }
+        }
+
+        .swiper-button-next {
+            &::before {
+                background: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -92,6 +106,16 @@
 
     .container-brand {
         @include grid-columns (grid, repeat(2, 1fr), 50px);
+    }
+
+    .swiper {
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .swiper-button-next {
+            display: none;
+        }
     }
 }
 

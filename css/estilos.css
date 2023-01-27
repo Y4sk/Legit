@@ -6,7 +6,7 @@
 .container-individual-product .container-side-section .individual-product-border, .container-individual-product .container-side-section .individual-product-border .accordion .accordion-item .accordion-collapse .accordion-body-size .size-grid, .container-individual-product .container-side-section .individual-product-border .box-individual-product-price {
   border: 0.1rem solid #efefef; }
 
-.container-brand a .brand, .container-pagination nav .pagination .page-item.active .page-link {
+.container-brand a .brand, .container-pagination nav .pagination .page-item.active .page-link, .swiper .swiper-button-prev, .swiper .swiper-button-prev::before, .swiper .swiper-button-next, .swiper .swiper-button-next::before {
   transition: .2s ease-in-out; }
 
 /* ---------------------------------------- HEADER ---------------------------------------- */
@@ -155,27 +155,38 @@ header .navbar {
     margin-bottom: 0px; }
 
 /* ---------------------------------------- PRODUCT CATEGORY ---------------------------------------- */
-.product-category-new-arrivals {
+.product-category {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
+  padding: 0px 2rem 0px 2rem;
   padding-bottom: 2rem; }
-  .product-category-new-arrivals .box-tittle {
+  .product-category .box-tittle {
     background-color: #ffffff;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 0px; }
-    .product-category-new-arrivals .box-tittle h2 {
+    .product-category .box-tittle h1 {
       font-family: "Proxima Nova";
       color: #131313;
       font-size: 1.5rem;
       text-decoration: none;
       text-transform: none;
-      font-weight: 400;
+      font-weight: 650;
+      letter-spacing: 0.04rem;
+      margin-bottom: 0px;
+      text-align: center; }
+    .product-category .box-tittle p {
+      font-family: "Proxima Nova";
+      color: #131313;
+      font-size: 1.5rem;
+      text-decoration: none;
+      text-transform: none;
+      font-weight: 650;
       letter-spacing: 0.04rem;
       margin-bottom: 0px;
       text-align: center; }
@@ -758,6 +769,125 @@ footer {
     margin-bottom: 0px;
     text-align: center; }
 
+.swiper {
+  width: 100%;
+  height: 100%; }
+  .swiper .swiper-wrapper .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: start;
+    border-radius: 0px; }
+    .swiper .swiper-wrapper .swiper-slide a {
+      text-decoration: none; }
+      .swiper .swiper-wrapper .swiper-slide a .store-product-image {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row; }
+        .swiper .swiper-wrapper .swiper-slide a .store-product-image img {
+          width: 100%;
+          height: 100%; }
+      .swiper .swiper-wrapper .swiper-slide a .box-product {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        width: 100%; }
+        .swiper .swiper-wrapper .swiper-slide a .box-product .product-name {
+          margin-bottom: 2px;
+          height: 24px;
+          width: 100%; }
+          .swiper .swiper-wrapper .swiper-slide a .box-product .product-name p {
+            font-family: "Proxima Nova";
+            color: #131313;
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.04rem;
+            margin-bottom: 0px;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden; }
+        .swiper .swiper-wrapper .swiper-slide a .box-product .product-model {
+          margin-bottom: 8px;
+          height: 22px;
+          width: 100%; }
+          .swiper .swiper-wrapper .swiper-slide a .box-product .product-model p {
+            font-family: "Proxima Nova";
+            color: #656565;
+            font-size: 0.875rem;
+            text-decoration: none;
+            text-transform: none;
+            font-weight: 400;
+            letter-spacing: 0.04rem;
+            margin-bottom: 0px;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden; }
+        .swiper .swiper-wrapper .swiper-slide a .box-product .product-price {
+          height: 30px;
+          width: 100%; }
+          .swiper .swiper-wrapper .swiper-slide a .box-product .product-price p {
+            font-family: "Proxima Nova";
+            color: #131313;
+            font-size: 1.25rem;
+            text-decoration: none;
+            text-transform: none;
+            font-weight: 400;
+            letter-spacing: 0.04rem;
+            margin-bottom: 0px;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden; }
+  .swiper .swiper-button-prev {
+    left: 2rem !important;
+    color: #ffffff;
+    --swiper-navigation-size: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: -25px;
+    background-color: #131313;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 3; }
+    .swiper .swiper-button-prev::before {
+      content: "";
+      height: 295.44px;
+      position: absolute;
+      width: 312px;
+      z-index: 2;
+      background: linear-gradient(90deg, #ffffff -3.81%, rgba(255, 255, 255, 0) 93.33%); }
+  .swiper .swiper-button-next {
+    right: 2rem !important;
+    color: #ffffff;
+    --swiper-navigation-size: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: -25px;
+    background-color: #131313;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 3; }
+    .swiper .swiper-button-next::before {
+      content: "";
+      height: 295.44px;
+      position: absolute;
+      width: 312px;
+      z-index: 2;
+      background: linear-gradient(270deg, #ffffff -3.81%, rgba(255, 255, 255, 0) 93.33%); }
+  .swiper .swiper-button-disabled {
+    opacity: 0; }
+
 /* ---------------------------------------- MEDIA QUERYS ---------------------------------------- */
 @media screen and (max-width: 1200px) {
   .container-product {
@@ -806,7 +936,11 @@ footer {
   .container-brand {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px; } }
+    gap: 50px; }
+  .swiper .swiper-button-prev::before {
+    background: none; }
+  .swiper .swiper-button-next::before {
+    background: none; } }
 
 @media screen and (max-width: 768px) {
   .container-carousel {
@@ -821,7 +955,11 @@ footer {
   .container-brand {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px; } }
+    gap: 50px; }
+  .swiper .swiper-button-prev {
+    display: none; }
+  .swiper .swiper-button-next {
+    display: none; } }
 
 @media screen and (max-width: 600px) {
   .container-product {

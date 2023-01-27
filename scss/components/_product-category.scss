@@ -1,19 +1,27 @@
 /* ---------------------------------------- PRODUCT CATEGORY ---------------------------------------- */
-.product-category-new-arrivals {
-    @include flex (flex, center, center, column);
+.product-category {
+    @include flex (flex, center, flex-start, column);
     width: map-get($principal-container, width-container);
     margin: map-get($principal-container, margin-container);
+    padding: map-get($principal-container, padding-container);
     padding-bottom: 2rem;
 
     .box-tittle {
         background-color: nth($bg-color, 3);
         @include margin (20px, 20px, 0px, 0px);
 
-        h2 {
-            font-family: nth($fontfamily, 1 );
-            color: nth($fontcolor, 1 );
-            font-size: nth($fontsize, 7 );
-            @include text (none, none, 400, 0.04rem, 0px, center);
+        h1 {
+            font-family: nth($fontfamily, 1);
+            color: nth($fontcolor, 1);
+            font-size: nth($fontsize, 7);
+            @include text (none, none, 650, 0.04rem, 0px, center);
+        }
+
+        p {
+            font-family: nth($fontfamily, 1);
+            color: nth($fontcolor, 1);
+            font-size: nth($fontsize, 7);
+            @include text (none, none, 650, 0.04rem, 0px, center);
         }
     }
 }
