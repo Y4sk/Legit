@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-most-popular, .swiper-sneakers, .swiper-apparel', {
+const swiper = new Swiper('.swiper-most-popular, .swiper-sneakers, .swiper-apparel, .swiper-related-product', {
     // Parameters
     direction: 'horizontal',
     loop: false,
