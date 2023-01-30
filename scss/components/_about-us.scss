@@ -3,7 +3,7 @@
     @include flex (flex, center, center, row);
     width: map-get($principal-container, width-container);
     height: 680px;
-    background-image: url("/img/virgil.webp");
+    background-image: url(../img/virgil.webp);
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -41,7 +41,7 @@
         width: map-get($principal-container, width-container);
         margin: map-get($principal-container, margin-container);
         padding: map-get($principal-container, padding-container);
-        background-image: url("/img/iframe-jordan-x-off-white.webp");
+        background-image: url(../img/iframe-jordan-x-off-white.webp);
         background-position: center center;
         background-repeat: no-repeat;
         -webkit-background-size: cover;
