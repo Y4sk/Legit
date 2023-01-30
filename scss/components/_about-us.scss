@@ -2,24 +2,76 @@
 .category-logo-legit {
     @include flex (flex, center, center, row);
     width: map-get($principal-container, width-container);
-    margin-bottom: 2rem;
-
-    img {
-        @include img (100%, auto);
-    }
+    height: 680px;
+    background-image: url(../../img/virgil.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .container-about-us {
     @include flex (flex, center, center, row);
-    width: 75%;
+    width: map-get($principal-container, width-container);
     margin: map-get($principal-container, margin-container);
     padding: map-get($principal-container, padding-container);
     height: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 
-    p {
+    h1 {
         font-family: nth($fontfamily, 1);
         color: nth($fontcolor, 1);
         font-size: nth($fontsize, 7);
         @include text (none, none, 400, 0.04rem, 0px, center);
+        line-height: 1.35;
+    }
+}
+
+.container-location {
+    @include flex (flex, center, center, row);
+    width: map-get($principal-container, width-container);
+    margin: map-get($principal-container, margin-container);
+    padding: map-get($principal-container, padding-container);
+
+    .location-category {
+        @include flex (flex, center, center, column);
+        width: map-get($principal-container, width-container);
+        margin: map-get($principal-container, margin-container);
+        padding: map-get($principal-container, padding-container);
+        background-image: url(../../img/iframe-jordan-x-off-white.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 340px;
+
+        h2 {
+            font-family: nth($fontfamily, 1);
+            color: nth($fontcolor, 4);
+            font-size: nth($fontsize, 7);
+            @include text (none, none, 600, 0.04rem, 0px, center);
+            line-height: 1.35;
+        }
+
+        svg {
+            width: 50px;
+            height: 50px;
+            fill: #ffffff;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-family: nth($fontfamily, 1);
+            color: nth($fontcolor, 4);
+            font-size: nth($fontsize, 7);
+            @include text (none, none, 600, 0.04rem, 0px, center);
+            line-height: 1.35;
+        }
     }
 }

@@ -117,6 +117,16 @@
             display: none;
         }
     }
+
+    .category-logo-legit {
+        height: 510px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .category-logo-legit {
+        height: 340px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -141,6 +151,27 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .container-about-us{
+        h1{
+            font-size: nth($fontsize, 6);
+        }
+    }
+    .container-location {
+        .location-category {
+            h2 {
+                font-size: nth($fontsize, 6);
+            }
+
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+
+            p {
+                font-size: nth($fontsize, 6);
             }
         }
     }
